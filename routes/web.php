@@ -1,0 +1,61 @@
+<?php
+
+/** @var \Laravel\Lumen\Routing\Router $router */
+
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register all of the routes for an application.
+| It is a breeze. Simply tell Lumen the URIs it should respond to
+| and give it the Closure to call when that URI is requested.
+|
+*/
+
+$router->get('/', function () use ($router) {
+    return $router->app->version();
+});
+
+$router->group(['prefix' => 'auth'], function () use ($router) {
+        $router->post('register', 'AuthController@register');
+        $router->post('login', 'AuthController@login');
+});
+
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->group(['prefix' => 'auth'], function () use ($router) {
+        $router->post('me', 'AuthController@me');
+    });
+
+    $router->group(['prefix' => 'modules'], function () use ($router) {
+        $router->get('/', 'ModuleController@index');          // Get all modules
+        $router->get('{id}', 'ModuleController@show');        // Get a single module
+        $router->post('/', 'ModuleController@store');         // Create a new module 
+        $router->put('{id}', 'ModuleController@update');      // Update an existing module
+        $router->delete('{id}', 'ModuleController@destroy');  // Delete a module
+    });
+
+    $router->group(['prefix' => 'lessons'], function () use ($router) {
+        $router->get('/', 'LessonController@index');          // Get all lessons
+        $router->get('{id}', 'LessonController@show');        // Get a single lesson
+        $router->post('/', 'LessonController@store');         // Create a new lesson
+        $router->put('{id}', 'LessonController@update');      // Update an existing lesson
+        $router->delete('{id}', 'LessonController@destroy');  // Delete a lesson
+    });
+
+    $router->group(['prefix' => 'activities'], function () use ($router) {
+        $router->get('/', 'ActivityController@index');        // Get all activities
+        $router->get('{id}', 'ActivityController@show');      // Get a single activity
+        $router->post('/', 'ActivityController@store');       // Create a new activity
+        $router->put('{id}', 'ActivityController@update');    // Update an activity
+        $router->delete('{id}', 'ActivityController@destroy'); // Delete an activity
+    });
+
+    $router->group(['prefix' => 'questions'], function () use ($router) {
+        $router->get('/', 'QuestionController@index');        // Get all questions
+        $router->get('{id}', 'QuestionController@show');      // Get a single question
+        $router->post('/', 'QuestionController@store');       // Create a new question
+        $router->put('{id}', 'QuestionController@update');    // Update an existing question
+        $router->delete('{id}', 'QuestionController@destroy'); // Delete a question
+    });
+});
