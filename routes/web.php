@@ -41,6 +41,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->post('/', 'LessonController@store');         // Create a new lesson
         $router->put('{id}', 'LessonController@update');      // Update an existing lesson
         $router->delete('{id}', 'LessonController@destroy');  // Delete a lesson
+        $router->post('track/{id}', 'LessonController@track');  // Track a lesson
     });
 
     $router->group(['prefix' => 'activities'], function () use ($router) {
@@ -49,6 +50,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->post('/', 'ActivityController@store');       // Create a new activity
         $router->put('{id}', 'ActivityController@update');    // Update an activity
         $router->delete('{id}', 'ActivityController@destroy'); // Delete an activity
+        $router->post('submit/{id}', 'ActivityController@saveUserAnswers');
     });
 
     $router->group(['prefix' => 'questions'], function () use ($router) {

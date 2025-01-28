@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lesson;
+use App\Models\UserLesson;
+use Auth;
 use Illuminate\Http\Request;
 use Throwable;
 
@@ -99,6 +101,31 @@ class LessonController extends Controller
             $lesson->delete();
 
             return response()->json(['message' => 'Lesson deleted successfully'], 200);
+        } catch (Throwable $e) {
+            return response()->json(['message' => 'Lesson not found!'], 404);
+        }
+    }
+
+    public function track($id) {
+        try {
+            $user = Auth::user();
+            $lesson = Lesson::findOrFail($id);
+
+            $check = UserLesson::where('lesson_id', $lesson->id)
+            ->where('module_id', $lesson->module_id)
+            ->where('user_id', $user->id ?? 1)
+            ->exists();   
+
+            if (!$check) {
+                $record = UserLesson::create([
+                    'user_id' => $user->id ?? 1,
+                    'lesson_id' => $lesson->id,
+                    'module_id' => $lesson->module_id
+                ]);
+            }
+
+            return response()->json(['message' => 'Lesson tracked successfully'], 200);
+
         } catch (Throwable $e) {
             return response()->json(['message' => 'Lesson not found!'], 404);
         }

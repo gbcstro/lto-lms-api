@@ -7,6 +7,7 @@ use App\Models\ActivityHistory;
 use App\Models\Choice;
 use App\Models\UserAnswer;
 use Auth;
+use DB;
 use Illuminate\Http\Request;
 use Throwable;
 
@@ -121,30 +122,32 @@ class ActivityController extends Controller
             $this->validate($request, [
                 'answers' => 'required|array',
                 'answers.*' => 'required|integer|exists:choices,id', // Validate each choice_id
-                'duration' => 'required|integer|min:1', // Ensure duration is a positive integer
+                'duration' => 'required|integer', // Ensure duration is a positive integer
             ]);
 
             $userId = Auth::user()->id;
             $activityId = $id;
-            $answers = $request->answers; // Array of answers [question_id => choice_id]
+            $answers = (array) $request->answers; // Array of answers [question_id => choice_id]
 
             $score = 0;
+            $correctAnswers = [];
             $totalQuestions = count($answers);
 
+            DB::beginTransaction();
             // Save each user answer to the UserAnswer table
-            foreach ($answers as $question => $questionId) {
-                // Check if the choice is correct
-                $choice = Choice::find($question['choice_id']);
+            foreach ($answers as $answer) {
+                $choice = Choice::find($answer);
 
                 if ($choice && $choice->is_correct) {
+                    $correctAnswers[] = $choice;
                     $score++;  // Increase the score for each correct answer
                 }
 
                 // Save the user answer
                 UserAnswer::create([
                     'user_id' => $userId,
-                    'question_id' => $questionId,
-                    'choice_id' => $question['choice_id'],
+                    'question_id' => $choice->question_id,
+                    'choice_id' => $choice->id,
                 ]);
             }
 
@@ -160,9 +163,12 @@ class ActivityController extends Controller
                 'duration' => $duration,
                 'is_completed' => $isCompleted,
             ]);
-
+            
+            DB::commit();
             return response()->json($history, 200);
+
         } catch (Throwable $e) {
+            report($e);
             return response()->json(['message' => $e->getMessage()], 500);
         }
     }
