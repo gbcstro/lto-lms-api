@@ -58,4 +58,16 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->put('{id}', 'QuestionController@update');    // Update an existing question
         $router->delete('{id}', 'QuestionController@destroy'); // Delete a question
     });
+
+    $router->group(['prefix' => 'choices'], function () use ($router) {
+        $router->get('/', 'ChoiceController@index');          // Get all choices
+        $router->get('{id}', 'ChoiceController@show');        // Get a single choice
+        $router->post('/', 'ChoiceController@store');         // Create a new choice
+        $router->put('{id}', 'ChoiceController@update');      // Update an existing choice
+        $router->delete('{id}', 'ChoiceController@destroy');  // Delete a choice
+    });
+
+    $router->group(['prefix' => 'bookmark'], function () use ($router) {
+        $router->post('{id}', 'BookmarkModuleController@store');    // Update an existing bookmark
+    });
 });

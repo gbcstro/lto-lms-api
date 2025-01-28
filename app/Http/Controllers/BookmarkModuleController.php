@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\BookmarkModule;
+use App\Models\Module;
 use Auth;
 use Illuminate\Http\Request;
 use Throwable;
@@ -22,32 +23,28 @@ class BookmarkModuleController extends Controller
         }
     }
 
-
-    public function store(Request $request)
+    public function store($id)
     {
         try {
-            $this->validate($request, [
-                'module_id' => 'required|exists:modules,id',
-            ]);
-            
             $user = Auth::user();
-            
+            $module = Module::findOrFail($id);
             // Check if the module is already bookmarked
-            $existingBookmark = BookmarkModule::where('user_id', $user->id)
-                                            ->where('module_id', $request->module_id)
+            $existingBookmark = BookmarkModule::where('user_id', $user->id ?? 1)
+                                            ->where('module_id', $module->id)
                                             ->first();
 
             if ($existingBookmark) {
-                return response()->json(['message' => 'Module already bookmarked.'], 400);
+                BookmarkModule::find($existingBookmark->id)->delete();
+                return response()->json(['message' => 'Bookmark removed.', 'value' => false], 201);
             }
 
             // Create a new bookmark
-            $bookmark = BookmarkModule::create([
-                'user_id' => $user->id,
-                'module_id' => $request->module_id,
+            BookmarkModule::create([
+                'user_id' => $user->id ?? 1,
+                'module_id' => $module->id,
             ]);
 
-            return response()->json( $bookmark, 201);
+            return response()->json(['message' => 'Module bookmarked!.', 'value' => true], 201);
 
         } catch (Throwable $e) {
             report($e);

@@ -12,7 +12,8 @@ class Question extends Model
     protected $fillable = [
         'activity_id',
         'question',
-        'type',
+        'image',
+        'type'
     ];
 
     public function activity()

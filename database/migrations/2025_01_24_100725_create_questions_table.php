@@ -16,6 +16,7 @@ return new class extends Migration
 
             $table->unsignedBigInteger('activity_id');
             $table->foreign('activity_id')->references('id')->on('activities')->onDelete('cascade');
+            $table->string('image')->nullable();
             $table->string('question');
             $table->enum('type', ['text', 'image']);
             $table->timestamps();

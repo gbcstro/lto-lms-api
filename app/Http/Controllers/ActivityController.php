@@ -35,7 +35,7 @@ class ActivityController extends Controller
     {
         try {
             // Find the activity by ID, including its related module and questions
-            $activity = Activity::with('module', 'questions')->findOrFail($id);
+            $activity = Activity::with('module', 'questions.choices')->findOrFail($id);
             return response()->json($activity, 200);
         } catch (Throwable $e) {
             return response()->json(['message' => 'Activity not found!'], 404);
