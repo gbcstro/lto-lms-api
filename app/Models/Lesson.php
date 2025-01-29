@@ -22,4 +22,9 @@ class Lesson extends Model
         return $this->belongsTo(Module::class);
     }
 
+    public function userLessons()
+    {
+        return $this->hasMany(UserLesson::class);
+    }   
+
 }

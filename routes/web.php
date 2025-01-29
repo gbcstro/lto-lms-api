@@ -19,12 +19,18 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'auth'], function () use ($router) {
         $router->post('register', 'AuthController@register');
+        $router->post('register/google', 'AuthController@registerWithGoogle');
         $router->post('login', 'AuthController@login');
+        $router->post('login/google', 'AuthController@loginWithGoogle');
 });
 
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->group(['prefix' => 'auth'], function () use ($router) {
-        $router->post('me', 'AuthController@me');
+        $router->get('me', 'AuthController@me');
+    });
+
+    $router->group(['prefix' => 'user'], function () use ($router) {
+        $router->put('update', 'UserController@updateProfile');      // Update an existing user
     });
 
     $router->group(['prefix' => 'modules'], function () use ($router) {
@@ -70,6 +76,14 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     });
 
     $router->group(['prefix' => 'bookmark'], function () use ($router) {
+        $router->get('', 'BookmarkModuleController@index');    // Get index
         $router->post('{id}', 'BookmarkModuleController@store');    // Update an existing bookmark
+    });
+
+    $router->group(['prefix' => 'activity-history'], function () use ($router) {
+        $router->get('', 'ActivityHistoryController@index');   // Get Index
+        $router->get('leaderboards', 'ActivityHistoryController@leaderboards');   // Get Leaderboards
+        $router->get('engagements', 'ActivityHistoryController@engagements');   // Get Engagement
+        $router->get('getTotalModuleHours', 'ActivityHistoryController@getTotalModuleHours');   // Get Total Hours
     });
 });

@@ -18,11 +18,8 @@ class UserController extends Controller
             $this->validate($request, [
                 'first_name' => 'sometimes|string|max:255',
                 'last_name' => 'sometimes|string|max:255',
-                'email' => 'sometimes|email|max:255|unique:users,email,' . Auth::user()->id(),
-                'username' => 'sometimes|string|max:255|unique:users,username,' . Auth::user()->id(),
                 'profile_picture' => 'sometimes|url',  // Assuming profile picture is a URL
                 'address' => 'sometimes|string|max:255',  // Add validation for address
-                'password' => 'sometimes|min:6|confirmed',  // If password is provided, it must be confirmed
             ]);
 
             // Get the currently authenticated user (or use $request->user_id if using user_id)
@@ -31,10 +28,7 @@ class UserController extends Controller
             // Save the changes
             $user->update($request->all());
 
-            return response()->json([
-                'message' => 'User profile updated successfully.',
-                'data' => $user,
-            ], 200);
+            return response()->json(Auth::user()->with(['history', 'bookmarks.module'])->first(), 200);
             
         } catch (Throwable $e) {
             return response()->json(['message' => $e->getMessage()], 500);

@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Exception;
+use GuzzleHttp\Client;
 use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Str;
 use Throwable;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
@@ -39,12 +42,7 @@ class AuthController extends Controller
             // Generate JWT token
             $token = JWTAuth::fromUser($user);
 
-            return response()->json([
-                'access_token' => $token,
-                'token_type' => 'bearer',
-                'expires_in' => auth('api')->factory()->getTTL() * 60,
-                'user' => auth()->user(),
-            ]);
+            return $this->respondWithToken($token);;
             
         } catch (Throwable $e) {
             report($e);
@@ -56,7 +54,7 @@ class AuthController extends Controller
         }
     }
 
-    private function registerWithGoogle(Request $request)
+    public function registerWithGoogle(Request $request)
     {
         try {
             $this->validate($request, [
@@ -67,22 +65,17 @@ class AuthController extends Controller
             $googleClientId = env('GOOGLE_CLIENT_ID');
 
             // Verify Google ID token
-            $response = Http::get("https://oauth2.googleapis.com/tokeninfo?id_token={$idToken}");
-
-            if (!$response->successful()) {
-                throw new \Exception('Invalid Google ID Token');
-            }
-
-            $payload = $response->json();
+            $client = new Client();
+            $response = $client->request('GET', "https://oauth2.googleapis.com/tokeninfo?id_token={$idToken}");
+            $payload = json_decode($response->getBody(), true);
 
             if ($payload['aud'] !== $googleClientId) {
-                throw new \Exception('Invalid Google Client ID');
+                throw new Exception('Invalid Google Client ID');
             }
 
             // Extract name parts
-            $fullName = explode(" ", $payload['name'], 2);
-            $firstName = $fullName[0] ?? "";
-            $lastName = $fullName[1] ?? "";
+            $firstName = $payload['given_name'];
+            $lastName = $payload['family_name'];
 
             // Generate a unique username if needed
             $username = strtolower(Str::slug($firstName . '.' . $lastName));
@@ -105,19 +98,16 @@ class AuthController extends Controller
                     'username' => $username,
                     'google_id' => $payload['sub'],
                     'profile_picture' => $payload['picture'],
-                    'password' => Hash::make(uniqid()) // Assign a random password
+                    'password' => uniqid() // Assign a random password
                 ]);
             }
 
             // Generate JWT token
             $token = JWTAuth::fromUser($user);
+            JWTAuth::setToken($token)->authenticate();
 
-            return response()->json([
-                'access_token' => $token,
-                'token_type' => 'bearer',
-                'expires_in' => auth('api')->factory()->getTTL() * 60,
-                'user' => auth()->user(),
-            ]);
+            return $this->respondWithToken($token);
+
         } catch (Throwable $e) {
             return response()->json([
                 'error' => 'Google registration failed',
@@ -130,10 +120,6 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         try {
-            if ($request->has('id_token')) {
-                return $this->loginWithGoogle($request);
-            }
-
             $this->validate($request, [
                 'username' => 'required|string',
                 'password' => 'required|string',
@@ -157,7 +143,7 @@ class AuthController extends Controller
         }
     }
 
-    private function loginWithGoogle(Request $request)
+    public function loginWithGoogle(Request $request)
     {
         try {
             $this->validate($request, [
@@ -168,18 +154,13 @@ class AuthController extends Controller
             $googleClientId = env('GOOGLE_CLIENT_ID');
 
             // Verify Google ID token
-            $response = Http::get("https://oauth2.googleapis.com/tokeninfo?id_token={$idToken}");
-
-            if (!$response->successful()) {
-                throw new \Exception('Invalid Google ID Token');
-            }
-
-            $payload = $response->json();
+            $client = new Client();
+            $response = $client->request('GET', "https://oauth2.googleapis.com/tokeninfo?id_token={$idToken}");
+            $payload = json_decode($response->getBody(), true);
 
             if ($payload['aud'] !== $googleClientId) {
-                throw new \Exception('Invalid Google Client ID');
+                throw new Exception('Invalid Google Client ID');
             }
-
             // Find the user
             $user = User::where('google_id', $payload['sub'])->orWhere('email', $payload['email'])->first();
 
@@ -189,10 +170,12 @@ class AuthController extends Controller
 
             // Generate JWT token
             $token = JWTAuth::fromUser($user);
+            JWTAuth::setToken($token)->authenticate();
 
             return $this->respondWithToken($token);
 
         } catch (Throwable $e) {
+            report($e);
             return response()->json([
                 'error' => 'Google login failed',
                 'message' => $e->getMessage(),
@@ -202,11 +185,19 @@ class AuthController extends Controller
     }
 
     // Fetch current logged-in user profile
-    public function me(Request $request)
+    public function me()
     {
         try {
+            // Check if user is authenticated
+            if (!Auth::check()) {
+                return response()->json([
+                    'error' => 'Unauthorized',
+                    'message' => 'User is not authenticated',
+                ], 401);
+            }   
+
             // Get authenticated user
-            $user = Auth::user();
+            $user = Auth::user()->with(['history', 'bookmarks.module'])->first();
 
             // Return the user's profile
             return response()->json([
@@ -223,12 +214,12 @@ class AuthController extends Controller
     }
 
     private function respondWithToken($token)
-    {
+    {   
         return response()->json([
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => auth()->factory()->getTTL() * 60,
-            'user' => Auth::user(),
+            'user' => Auth::user()->with(['history', 'bookmarks.module'])->first(),
         ], 200);
     }
 }

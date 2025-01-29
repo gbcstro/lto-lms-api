@@ -42,6 +42,20 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         }
     }
 
+    public function getPasswordAttribute($value) {
+        return $value;
+    }
+
+    public function history() 
+    {
+        return $this->hasMany(ActivityHistory::class);
+    }
+
+    public function bookmarks() 
+    {
+        return $this->hasMany(BookmarkModule::class);
+    }
+
     public function answers() 
     {
         return $this->hasMany(UserAnswer::class);

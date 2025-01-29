@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\ActivityHistory;
+use App\Models\Module;
+use App\Models\UserLesson;
 use Auth;
+use DB;
 use Illuminate\Http\Request;
 use Throwable;
 
@@ -89,6 +92,101 @@ class ActivityHistoryController extends Controller
             return response()->json(['message' => 'Activity history deleted successfully.'], 200);
         } catch (Throwable $e) {
             return response()->json(['message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function leaderboards() {
+        try {
+            // Get user ID
+            $userId = Auth::user()->id;
+
+            // Get latest scores per activity per user
+            $userRanks = ActivityHistory::select(
+                'user_id', 
+                DB::raw('SUM(score) as total_score')
+            )
+                ->whereIn('id', function ($query) {
+                    $query->select(DB::raw('MAX(id)'))
+                        ->from('activity_histories')
+                        ->groupBy('user_id', 'activity_id');
+                })
+                ->groupBy('user_id')
+                ->orderByDesc('total_score')
+                ->get();
+
+            // Find user's rank
+            $rank = 1;
+            foreach ($userRanks as $userRank) {
+                if ($userRank->user_id == $userId) {
+                    return response()->json([
+                        'rank' => $rank,
+                        'total_score' => $userRank->total_score,
+                        'total_ranks' => $userRanks->count()
+                    ]);
+                }
+                $rank++;
+            }
+
+            return response()->json([
+                'rank' => 0,
+                'total_score' => 0,
+                'total_ranks' => $userRanks->count()
+            ], 200);
+
+        } catch (Throwable $e) {
+            report($e);
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function engagements() {
+        try {
+            // Get user ID
+            $userId = Auth::user()->id;
+
+            // Get total lessons across all modules
+            $totalLessons = Module::withCount('lessons')->get()->sum('lessons_count');
+
+            // Get total completed lessons by user
+            $completedLessons = UserLesson::where('user_id', $userId)->count();
+
+            // Calculate total engagement percentage
+            $overallEngagement = $totalLessons > 0 ? ($completedLessons / $totalLessons) * 100 : 0;
+
+            return response()->json([
+                'total_lessons' => $totalLessons,
+                'completed_lessons' => $completedLessons,
+                'overall_engagement_percentage' => round($overallEngagement, 0)
+            ]);
+
+        } catch (Throwable $e) {
+            report($e);
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function getTotalModuleHours()
+    {
+        try {
+            // Get user ID
+            $userId = Auth::user()->id;
+
+            // Sum the duration (assuming duration is stored in seconds)
+            $totalSeconds = UserLesson::where('user_id', $userId)->sum('duration');
+
+            // Convert seconds to hours and minutes
+            $hours = floor($totalSeconds / 3600);  // Hours
+            $minutes = floor(($totalSeconds % 3600) / 60);  // Minutes
+
+            return response()->json([
+                'total_seconds' => $totalSeconds,   // Total duration in seconds
+                'total_hours' => $hours,            // Total hours
+                'total_minutes' => $minutes,        // Total minutes
+                'formatted_time' => sprintf("%02dh %02dm", $hours, $minutes) // Formatted output: "05h 30m"
+            ]);
+            
+        } catch (Throwable $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
         }
     }
 }

@@ -106,22 +106,26 @@ class LessonController extends Controller
         }
     }
 
-    public function track($id) {
+    public function track(Request $request, $id) {
         try {
             $user = Auth::user();
             $lesson = Lesson::findOrFail($id);
 
-            $check = UserLesson::where('lesson_id', $lesson->id)
+            $track = UserLesson::where('lesson_id', $lesson->id)
             ->where('module_id', $lesson->module_id)
-            ->where('user_id', $user->id ?? 1)
-            ->exists();   
+            ->where('user_id', $user->id)
+            ->first();   
 
-            if (!$check) {
+            if (!$track) {
                 $record = UserLesson::create([
-                    'user_id' => $user->id ?? 1,
+                    'user_id' => $user->id,
                     'lesson_id' => $lesson->id,
-                    'module_id' => $lesson->module_id
+                    'module_id' => $lesson->module_id,
+                    'duration' => $request->duration
                 ]);
+            } else {
+                $track->duration += $request->duration;
+                $track->save();
             }
 
             return response()->json(['message' => 'Lesson tracked successfully'], 200);

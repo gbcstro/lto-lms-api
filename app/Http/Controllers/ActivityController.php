@@ -121,7 +121,6 @@ class ActivityController extends Controller
             // Validate the incoming request using $this->validate()
             $this->validate($request, [
                 'answers' => 'required|array',
-                'answers.*' => 'required|integer|exists:choices,id', // Validate each choice_id
                 'duration' => 'required|integer', // Ensure duration is a positive integer
             ]);
 
@@ -143,12 +142,14 @@ class ActivityController extends Controller
                     $score++;  // Increase the score for each correct answer
                 }
 
-                // Save the user answer
-                UserAnswer::create([
-                    'user_id' => $userId,
-                    'question_id' => $choice->question_id,
-                    'choice_id' => $choice->id,
-                ]);
+                if ($choice) {
+                    // Save the user answer
+                    UserAnswer::create([
+                        'user_id' => $userId,
+                        'question_id' => $choice->question_id,
+                        'choice_id' => $choice->id,
+                    ]);
+                }
             }
 
             // Calculate the duration and save activity history once all answers are stored
