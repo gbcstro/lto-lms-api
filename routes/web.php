@@ -86,4 +86,12 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->get('engagements', 'ActivityHistoryController@engagements');   // Get Engagement
         $router->get('getTotalModuleHours', 'ActivityHistoryController@getTotalModuleHours');   // Get Total Hours
     });
+
+    $router->group(['prefix' => 'feedback' ], function () use ($router) {
+        $router->get('/', 'FeedbackController@index');      // Get all feedback
+        $router->post('/', 'FeedbackController@store');    // Create new feedback
+        $router->get('/{id}', 'FeedbackController@show');  // Get single feedback
+        $router->put('/{id}', 'FeedbackController@update'); // Update feedback
+        $router->delete('/{id}', 'FeedbackController@destroy'); // Delete feedback
+    });
 });
