@@ -13,7 +13,8 @@ class Question extends Model
         'activity_id',
         'question',
         'image',
-        'type'
+        'type',
+        'category',
     ];
 
     public function activity()

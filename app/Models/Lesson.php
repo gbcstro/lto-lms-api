@@ -15,6 +15,7 @@ class Lesson extends Model
         'image',
         'content',
         'module_id',
+        'duration'
     ];
 
     public function module()

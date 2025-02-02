@@ -31,6 +31,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
     $router->group(['prefix' => 'user'], function () use ($router) {
         $router->put('update', 'UserController@updateProfile');      // Update an existing user
+        $router->get('achievements', 'UserController@achievements');      // Update an existing user
     });
 
     $router->group(['prefix' => 'modules'], function () use ($router) {

@@ -17,6 +17,7 @@ class QuestionFactory extends Factory
             'image' => $this->faker->imageUrl(),  // Random image
             'type' => $this->faker->randomElement(['text', 'image']), // Random question type
             'activity_id' => Activity::inRandomOrder()->first()->id, // Random activity ID
+            'category' => $this->faker->randomElement(['situational', 'normal', 'interactive']),
     	];
     }
 }

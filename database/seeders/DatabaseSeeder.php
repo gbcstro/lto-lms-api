@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             // Create 2 activities for each module
             Activity::factory(1)->create(['module_id' => $module->id])->each(function ($activity) {
                 // Create 3 questions for each activity
-                Question::factory(14)->create(['activity_id' => $activity->id])->each(function ($question) {
+                Question::factory(100)->create(['activity_id' => $activity->id])->each(function ($question) {
                     // Create 4 choices for each question
                     Choice::factory(6)->create(['question_id' => $question->id]);
                 });

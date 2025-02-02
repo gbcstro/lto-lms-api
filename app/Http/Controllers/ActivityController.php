@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Activity;
 use App\Models\ActivityHistory;
 use App\Models\Choice;
+use App\Models\Question;
 use App\Models\UserAnswer;
 use Auth;
 use DB;
@@ -19,8 +20,11 @@ class ActivityController extends Controller
     public function index()
     {
         try {
-            // Fetch all activities with their module and questions
-            $activities = Activity::with('questions.choices')->get();
+            // Fetch all activities and process each one
+            $activities = Activity::with('questions.choices')->get()->map(function ($activity) {
+
+                return $this->attachQuestions($activity);
+            });
 
             return response()->json($activities, 200);
             
@@ -36,12 +40,63 @@ class ActivityController extends Controller
     {
         try {
             // Find the activity by ID, including its related module and questions
-            $activity = Activity::with('module', 'questions.choices')->findOrFail($id);
+            $activity = Activity::with([
+                'module', 
+                'questions.choices'
+            ])->findOrFail($id);
+
+            // Attach questions to the activity
+            $activity = $this->attachQuestions($activity);
+
             return response()->json($activity, 200);
+            
         } catch (Throwable $e) {
             return response()->json(['message' => 'Activity not found!'], 404);
         }
     }
+
+    /**
+     * Attach exactly 14 questions to an activity.
+     * Ensures at least one question per required category.
+     *
+     * @param Activity $activity
+     * @return Activity
+     */
+    private function attachQuestions(Activity $activity)
+    {
+        $requiredCategories = ['situational', 'normal', 'interactive'];
+
+        // Fetch at least one question per required category
+        $selectedQuestions = collect();
+        foreach ($requiredCategories as $category) {
+            $question = Question::where('category', $category)
+                ->where('activity_id', $activity->id)
+                ->inRandomOrder()
+                ->limit(1)
+                ->get();
+            $selectedQuestions = $selectedQuestions->merge($question);
+        }
+
+        // Get remaining questions to complete 14 total
+        $remainingCount = 14 - $selectedQuestions->count();
+        $remainingQuestions = Question::where('activity_id', $activity->id)
+            ->whereNotIn('id', $selectedQuestions->pluck('id'))
+            ->inRandomOrder()
+            ->limit($remainingCount)
+            ->get();
+
+        // Merge, shuffle, and load choices
+        $finalQuestions = $selectedQuestions->merge($remainingQuestions)->shuffle();
+
+        // Manually load choices for each question
+        $finalQuestions->each(function ($question) {
+            $question->loadMissing('choices'); // This loads choices only if they aren't loaded yet
+        });
+
+        // Attach questions to the activity
+        return $activity->setRelation('questions', $finalQuestions);
+    }
+    
 
     /**
      * Create a new activity.
