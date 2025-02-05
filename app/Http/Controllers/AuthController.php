@@ -41,6 +41,7 @@ class AuthController extends Controller
 
             // Generate JWT token
             $token = JWTAuth::fromUser($user);
+            JWTAuth::setToken($token)->authenticate();
 
             return $this->respondWithToken($token);;
             
