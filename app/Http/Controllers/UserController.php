@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Activity;
 use App\Models\ActivityHistory;
 use App\Models\Module;
+use App\Models\User;
 use App\Models\UserLesson;
 use Auth;
 use Illuminate\Http\Request;
@@ -32,7 +33,7 @@ class UserController extends Controller
             // Save the changes
             $user->update($request->all());
 
-            return response()->json(Auth::user()->with(['history', 'bookmarks.module'])->first(), 200);
+            return response()->json(User::with(['history', 'bookmarks.module'])->find($user->id), 200);
             
         } catch (Throwable $e) {
             return response()->json(['message' => $e->getMessage()], 500);

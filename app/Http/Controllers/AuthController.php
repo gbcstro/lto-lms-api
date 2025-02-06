@@ -18,10 +18,6 @@ class AuthController extends Controller
     public function register(Request $request)
     {
         try {
-            if ($request->has('id_token')) {
-                return $this->registerWithGoogle($request);
-            }
-
             $this->validate($request, [
                 'first_name' => 'required|string',
                 'last_name' => 'required|string',
@@ -198,7 +194,7 @@ class AuthController extends Controller
             }   
 
             // Get authenticated user
-            $user = Auth::user()->with(['history', 'bookmarks.module'])->first();
+            $user = User::with(['history', 'bookmarks.module'])->find(Auth::user()->id);
 
             // Return the user's profile
             return response()->json([

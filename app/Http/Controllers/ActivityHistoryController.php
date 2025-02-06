@@ -25,7 +25,7 @@ class ActivityHistoryController extends Controller
 
             // Check if activity history exists for the user
             if ($activityHistory->isEmpty()) {
-                return response()->json(['message' => 'No activity history found for this user.'], 404);
+                return response()->json($activityHistory, 200);
             }
 
             return response()->json($activityHistory, 200);
