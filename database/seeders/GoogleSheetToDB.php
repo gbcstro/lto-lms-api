@@ -110,14 +110,14 @@ class GoogleSheetToDB extends Seeder
      */
     private function convertDriveLinkToDirectImageUrl(string $link): string
     {
-        // Match the pattern for Google Drive file links
-        if (preg_match('/drive\.google\.com\/open\?id=([a-zA-Z0-9_-]+)/', $link, $matches)) {
+        // Match Google Drive file ID from different link formats
+        if (preg_match('/drive\.google\.com\/(?:file\/d\/|open\?id=)([a-zA-Z0-9_-]+)/', $link, $matches)) {
             $fileId = $matches[1];
             // Construct direct image URL
             return "https://drive.google.com/thumbnail?id=" . $fileId;
         }
 
-        // Return the original link if it's not a Google Drive link
+        // Return the original link if it's not a recognizable Google Drive link
         return $link;
     }
 }
