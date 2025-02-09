@@ -30,8 +30,10 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     });
 
     $router->group(['prefix' => 'user'], function () use ($router) {
-        $router->put('update', 'UserController@updateProfile');      // Update an existing user
-        $router->get('achievements', 'UserController@achievements');      // Update an existing user
+        $router->get('', 'UserController@index');      // Get all users
+        $router->put('update', 'UserController@updateProfile');      // Update logged user
+        $router->delete('{id}', 'UserController@delete');      // Update an existing user
+        $router->get('achievements', 'UserController@achievements');      // Get logged user achievements
     });
 
     $router->group(['prefix' => 'modules'], function () use ($router) {

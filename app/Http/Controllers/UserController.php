@@ -13,6 +13,19 @@ use Throwable;
 
 class UserController extends Controller
 {
+    public function index() {
+        try {
+
+            $users = User::with(['history', 'bookmarks.module'])->get();
+
+            return response()->json($users, 200);
+
+        } catch (Throwable $e) {
+            report($e);
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
+    }
+
      /**
      * Update the user profile.
      */
@@ -28,7 +41,7 @@ class UserController extends Controller
             ]);
 
             // Get the currently authenticated user (or use $request->user_id if using user_id)
-            $user = Auth::user(); // This assumes you're using JWT authentication for the authenticated user
+            $user = $request->id ? User::find($request->id) : Auth::user(); // This assumes you're using JWT authentication for the authenticated user
             
             // Save the changes
             $user->update($request->all());
@@ -40,7 +53,21 @@ class UserController extends Controller
         }
     }
 
-    public function achievements() {
+    public function delete($id) {
+        try {
+            $user = User::find($id);
+
+            $user->delete();
+
+            return response()->json(['message' => 'User deleted successfully'], 200);
+
+        } catch (Throwable $e) {
+            report($e);
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
+    }
+
+    public function achievements(Request $reqeust) {
         try {
             $badges = [];
 
@@ -48,8 +75,9 @@ class UserController extends Controller
                 return response()->json(['message' => 'Unauthorized'], 401);
             }
 
-            $modules = $this->modulesAchievements();
-            $activities = $this->activityAchievements();
+            $id = $reqeust->id ?? null;
+            $modules = $this->modulesAchievements($id);
+            $activities = $this->activityAchievements($id);
 
             $badges = array_merge( $modules['badges'], $activities['badges']);
 
@@ -68,7 +96,7 @@ class UserController extends Controller
         }
     }
 
-    private function modulesAchievements() {
+    private function modulesAchievements($id) {
         try {
             $modules = Module::get();
             $badges = [];
@@ -97,7 +125,7 @@ class UserController extends Controller
 
             $count = 0;
             foreach ($modules as $module) {
-                if ($this->checkModuleProgress($module->id)) {
+                if ($this->checkModuleProgress($module->id, $id)) {
                     $badge = array_filter($module_badges, function($badge) use ($module) {
                         return $badge['module_id'] === $module->id;
                     });
@@ -125,7 +153,7 @@ class UserController extends Controller
         }
     }
 
-    private function activityAchievements() {
+    private function activityAchievements($id) {
         try {
             $activities = Activity::get();
             $badges = [];
@@ -154,7 +182,7 @@ class UserController extends Controller
 
             $count = 0;
             foreach ($activities as $activity) {
-                if ($this->checkActivityProgress($activity->id)) {
+                if ($this->checkActivityProgress($activity->id, $id)) {
                     $badge = array_filter($quiz_badges, function($badge) use ($activity) {
                         return $badge['activity_id'] === $activity->id;
                     });
@@ -182,10 +210,10 @@ class UserController extends Controller
         }
     }
 
-    private function checkModuleProgress($module_id) {
+    private function checkModuleProgress($module_id, $id) {
         try {
             $module = Module::with('lessons')->findOrFail($module_id);
-            $userLessons = UserLesson::where('user_id', Auth::user()->id)
+            $userLessons = UserLesson::where('user_id', $id ?? Auth::user()->id)
                             ->where('module_id', $module_id)
                             ->get();
 
@@ -197,9 +225,9 @@ class UserController extends Controller
         }
     }
 
-    private function checkActivityProgress($activity_id) {
+    private function checkActivityProgress($activity_id, $id) {
         try {
-            $score = ActivityHistory::where('user_id', Auth::user()->id)
+            $score = ActivityHistory::where('user_id', $id ?? Auth::user()->id)
                             ->where('activity_id', $activity_id)
                             ->max('score');
 

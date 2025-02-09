@@ -1,0 +1,909 @@
+﻿ID,QUESTION_ID,CONTEXT,IS_CORRECT,LINK
+1,1,Stopping is discretionary except when ordered by a traffic policeman.,FALSE,
+2,1,Vehicles can give way and go without stopping.,FALSE,
+3,1,Vehicles need to stop entirely at the marked stop line.,TRUE,
+4,1,Only heavy vehicles are obligated to stop.,FALSE,
+5,2,Vehicles need to slow down but go without stopping.,FALSE,
+6,2,Vehicles must yield the right of way to traffic on the intersection or roadway.,TRUE,
+7,2,All vehicles must come to a complete stop.,FALSE,
+8,2,Pedestrians must give way to vehicles .,FALSE,
+9,3,Only trucks are required to yield when making a left turn.,FALSE,
+10,3,Vehicles making a left turn have the right of way at the intersection.,FALSE,
+11,3,Left turns are not permitted at this intersection.,FALSE,
+12,3,Vehicles making a left turn should make way for oncoming traffic.,TRUE,
+13,4,Only U-turns.,FALSE,
+14,4,Vehicles may turn if the way is clear.,FALSE,
+15,4,Any type of turns left or right is not allowed at the crossing.,TRUE,
+16,4,No vehicle is authorized to enter.,FALSE,
+17,5,Traffic shall only flow in one direction on the road up ahead.,TRUE,
+18,5,Vehicular flow may be in either direction.,FALSE,
+19,5,Pedestrians should go on the opposite side of the road.,FALSE,
+20,5,Only bicycles are permitted on this road.,FALSE,
+21,6,The right lane is shut down.,FALSE,
+22,6,Vehicular traffic may use either side of the road.,FALSE,
+23,6,Right turns are the only permitted turns.,FALSE,
+24,6,Vehicular traffic must remain on the right side of the road.,TRUE,
+25,7,Turns are only made to the left.,FALSE,
+26,7,Vehicles are allowed to take either side of the road.,FALSE,
+27,7,Vehicles should travel on the left side of the road.,TRUE,
+28,7,The left lane is closed.,FALSE,
+29,8,Vehicles from another road will merge with the main traffic up ahead.,TRUE,
+30,8,Vehicles need to leave the highway.,FALSE,
+31,8,The road up ahead splits into two lanes.,FALSE,
+32,8,"Beyond this point, one lane only is in service.",FALSE,
+33,9,No pedestrian beyond this sign,FALSE,
+34,9,Only select type of vehicles are not permitted in.,FALSE,
+35,9,Proceed with caution for vehicles.,FALSE,
+36,9, No vehicle can enter this designated area.,TRUE,
+37,10,Tricycles are allowed to cross provided the way is clear.,FALSE,
+38,10,Only bicycles are restricted to cross.,FALSE,
+39,10,Tricycles are not permitted to cross the marked road section.,TRUE,
+40,10,Tricycles should wait and allow larger vehicles to pass.,FALSE,
+41,11,Vehicles must stop before the overpass.,FALSE,
+42,11,Vehicles are allowed to use the overpass.,FALSE,
+43,11,Only bicycles can use the overpass.,FALSE,
+44,11,Pedestrians must use the overpass to cross the road.,TRUE,
+45,12,Only emergency vehicles can turn right.,FALSE,
+46,12,Vehicles can only turn right.,FALSE,
+47,12,Right turns are not allowed here.,TRUE,
+48,12,Right turns are permitted only during certain hours.,FALSE,
+49,13,Left turns are not allowed here.,TRUE,
+50,13,Vehicles can only turn left.,FALSE,
+51,13,Only bicycles can turn left.,FALSE,
+52,13,Left turns are permitted only outside peak hours.,FALSE,
+53,14,Only the bicycles are permitted to make a U-turn.,FALSE,
+54,14,U-turn is permitted but only for large vehicles.,FALSE,
+55,14,U-turns are mandatory here for the vehicle.,FALSE,
+56,14,No U-turn allowed here.,TRUE,
+57,15,Only vehicles of emergency character may pass.,FALSE,
+58,15,Only motorcyclists may pass.,FALSE,
+59,15,No overtaking shall be allowed in the marked zone.,TRUE,
+60,15,Any vehicle may pass when the roadway is clear.,FALSE,
+61,16,Motorists must not exceed the shown speed.,TRUE,
+62,16,Motorists must not fall below the minimum speed.,FALSE,
+63,16,Emergency vehicles are exempted from the application of speed.,FALSE,
+64,16,Speed limit applies only during specific time of day.,FALSE,
+65,17,Vehicles are allowed only to unload.,FALSE,
+66,17,Cars can be temporarily stopped in order to both load and unload.,TRUE,
+67,17,Vehicles are not allowed in this place.,FALSE,
+68,17,There is no waiting anytime.,FALSE,
+69,18,Loading and unloading are permitted only during specific hours.,FALSE,
+70,18,Only buses are allowed to load and unload in this area.,FALSE,
+71,18,Vehicles are not allowed to load or unload passengers or goods at any time.,TRUE,
+72,18,Pedestrians must avoid the area during loading operations.,FALSE,
+73,19,Only buses are allowed to load and unload passengers.,FALSE,
+74,19,"Loading is allowed, but unloading is prohibited.",FALSE,
+75,19,Vehicles can load or unload only during peak hours.,FALSE,
+76,19,Loading and unloading are prohibited in the area.,TRUE,
+77,20,Vehicles can park only for a short period.,FALSE,
+78,20,Parking is permitted only for emergency vehicles.,FALSE,
+79,20,Pedestrians can cross freely in this area.,FALSE,
+80,20,Parking is not allowed in this area.,TRUE,
+81,21,No car can be left to park any time in that place.,TRUE,
+82,21,Only commerce cars are to be parked within that area,FALSE,
+83,21,Just to park over there for little while,FALSE,
+84,21,Only bikes and autos can keep in that designated place.,FALSE,
+85,22,All the vehicle which are parked can be tow away from that road.,TRUE,
+86,22,The parking is permissible for a brief period.,FALSE,
+87,22,Only lorries are allowed to park here.,FALSE,
+88,22,Emergency vehicles are exempted,FALSE,
+89,23,Parking is allowed only in summer.,FALSE,
+90,23,Parking is prohibited during weekdays.,TRUE,
+91,23,Parking is restricted only during specific hours.,FALSE,
+92,23,Parking is permitted on holidays.,FALSE,
+93,24,Rear seat passengers are optional to wear seat belts.,FALSE,
+94,24,Trucks only are covered under this rule.,FALSE,
+95,24,All drivers and passengers must wear seat belts.,TRUE,
+96,24,This rule does not apply to motorcycles.,FALSE,
+97,25,Emergency vehicles alone are allowed to use their horns.,FALSE,
+98,25,Using of horns is allowed only in certain hours.,FALSE,
+99,25,Blowing of horns is not allowed in the area.,TRUE,
+100,25,Pedestrians should get out of the way when honking.,FALSE,
+101,26,Vehicles have to look for pedestrians crossing over.,TRUE,
+102,26,Pedestrians are not to cross here,FALSE,
+103,26,Only bicycles are supposed to cross on the road.,FALSE,
+104,26,A vehicle can cross over without braking.,FALSE,
+105,27,Only bicycles are permitted to cross when school is in session.,FALSE,
+106,27,No pedestrian is allowed here.,FALSE,
+107,27,School zones are restricted only to emergency vehicles.,FALSE,
+108,27,Vehicles need to slow down and be cautious for school children crossing the street.,TRUE,
+109,28,Vehicles should only consist of motorcycles and move through this lane.,FALSE,
+110,28,A designated lane for bicycles is ahead.,TRUE,
+111,28,No bicycles are permitted in the locality.,FALSE,
+112,28,Vehicles should yield to pedestrians.,FALSE,
+113,29,Cross the road: Pedestrian prohibited.,FALSE,
+114,29,Cross only by bicycle.,FALSE,
+115,29,Vehicles have to slow down and look for persons with disability crossing the street.,TRUE,
+116,29,Cars can pass-through without slowing.,FALSE,
+117,30,Vehicles should take right turn ahead.,FALSE,
+118,30,Lane on right side is under construction.,FALSE,
+119,30,Pedestrians must look while crossing the road.,FALSE,
+120,30,Road ahead sharply curves to right.,TRUE,
+121,31,The road ahead has a gradual curve to the right.,TRUE,
+122,31,Vehicles must stop before turning right.,FALSE,
+123,31,The right lane is closed.,FALSE,
+124,31,Pedestrians must yield to vehicles.,FALSE,
+125,32,Only bicycles are permitted to go.,FALSE,
+126,32,The road ahead has a gradual curve to the left.,TRUE,
+127,32,Vehicles must stop before turning left.,FALSE,
+128,32,The left lane is closed.,FALSE,
+129,33,Proceed through without braking.,FALSE,
+130,33,"The road ahead has two gentle curves, beginning with a right curve.",TRUE,
+131,33,"Turn sharply right, in reverse, immediately.",FALSE,
+132,33,The lane to the right is closed for construction.,FALSE,
+133,34,Vehicles need to stop immediately.,FALSE,
+134,34,Road ahead becomes one lane.,FALSE,
+135,34,Road ends completely.,FALSE,
+136,34,Road ahead meets another road.,TRUE,
+137,35,Only trucks are allowed to enter the roundabout.,FALSE,
+138,35,"A roundabout is approaching, and vehicles must follow its circular flow.",TRUE,
+139,35,Vehicles must stop before entering the roundabout.,FALSE,
+140,35,The road ends at the roundabout.,FALSE,
+141,36,Only bicycles need to stop at the traffic lights.,FALSE,
+142,36,A set of traffic lights is ahead.,TRUE,
+143,36,Vehicles should stop right now at this point.,FALSE,
+144,36,Pedestrians are not allowed to cross beyond this sign.,FALSE,
+145,37,Pedestrians are not permitted to cross in this area.,FALSE,
+146,37,The road is closed to all vehicles.,FALSE,
+147,37,Only bicycles are permitted beyond this point.,FALSE,
+148,37,Vehicles must slow down and be prepared to stop for pedestrians crossing ahead.,TRUE,
+149,38,Pedestrians are not allowed to cross at this point.,FALSE,
+150,38,Vehicles should turn left or right in order to avoid the crossing.,FALSE,
+151,38,Only emergency vehicles can proceed.,FALSE,
+152,38,Vehicles should slow down and prepare to stop for pedestrians crossing ahead.,TRUE,
+153,39,The road ahead is for children only.,FALSE,
+154,39,Vehicles must slow down and stop for children crossing the road ahead.,TRUE,
+155,39,Pedestrians are not allowed in this area.,FALSE,
+156,39,Only school buses are allowed to stop in this area.,FALSE,
+157,40,Pedestrians may cross anywhere.,FALSE,
+158,40,Vehicles should give way to pedestrians in all places.,FALSE,
+159,40,Pedestrians must cross at designated crossings,TRUE,
+160,40,Pedestrian traffic has been barred from the road ahead.,FALSE,
+161,41,Only the bicycles are allowed to proceed.,FALSE,
+162,41,Pedestrians only are permitted on the bike lane.,FALSE,
+163,41,Vehicles need to slow down and be on the look out for bikes on the bike lane ahead.,TRUE,
+164,41,The vehicles are needed to stop and make way for the bikes.,FALSE,
+165,42,"A school is nearby, and vehicles should reduce speed and observe children.",TRUE,
+166,42,Only school buses are allowed in the road.,FALSE,
+167,42,Vehicles should halt immediately.,FALSE,
+168,42,The way ahead is barred to school traffic.,FALSE,
+169,43,Only bicycles are allowed in this area.,FALSE,
+170,43,The road is closed to vehicles during certain hours.,FALSE,
+171,43,"A playground is nearby, and vehicles should slow down and go carefully.",TRUE,
+172,43,The area is restricted to pedestrian traffic only.,FALSE,
+173,44,All vehicles must stop and measure their height.,FALSE,
+174,44,Only emergency vehicles are allowed in this area.,FALSE,
+175,44,The road is restricted to bicycles and motorcycles.,FALSE,
+176,44,Vehicles taller than 4.8 meters are not allowed beyond this point.,TRUE,
+177,45,Vehicles must stop and wait for instructions.,FALSE,
+178,45,The road ahead is closed for repairs.,FALSE,
+179,45,"The road ahead is prone to accidents, and a good reduction in speed is necessary.",TRUE,
+180,45,Only emergency vehicles are allowed beyond this point.,FALSE,
+181,46,It gives one signboard carrying directions to several destinations.,TRUE,
+182,46,There is only one way out in that area.,FALSE,
+183,46,The highway is restricted to some vehicles only.,FALSE,
+184,46,Commercial vehicles only are permitted to park.,FALSE,
+185,47,Various road routes are open for vehicles.,FALSE,
+186,47,This locality is accessible by pedestrians only.,FALSE,
+187,47,Trucks are the only vehicles that can proceed from here.,FALSE,
+188,47,It gives directions to a single destination.,TRUE,
+189,48,Turns to the right are not allowed.,FALSE,
+190,48,The driver should stop first.,FALSE,
+191,48,"The road ahead is prohibited to motor vehicle, only motorcycles can drive it.",FALSE,
+192,48,It guides direction in making a right turn at an intersection.,TRUE,
+193,49,It is very specifically a direction sign displaying the route numbers as well as names of roads.,TRUE,
+194,49,Access on the route is restricted to particular vehicles only.,FALSE,
+195,49,Vehicles have to halt before proceeding on.,FALSE,
+196,49,The section is limited to access by pedestrian.,FALSE,
+197,50,Drivers must reduce speed right away.,FALSE,
+198,50,Pedestrians are not allowed beyond this point.,FALSE,
+199,50,"Pedestrians are only permitted to proceed up ahead, cyclists only.",FALSE,
+200,50,It indicates the direction or route a driver is currently following.,TRUE,
+201,51,Exemptions at tolls from paying are provided only to vehicles of emergencies.,FALSE,
+202,51,"On the toll road, only trucks are allowed.",FALSE,
+203,51,It displays the toll collections that need to be paid at a toll highway or plaza.,TRUE,
+204,51,There should not be passing pedestrians through this toll area.,FALSE,
+205,52,Only buses are allowed in the lane.,FALSE,
+206,52,It gives direction on which lanes to use for certain directions.,TRUE,
+207,52,Vehicles should merge into one lane.,FALSE,
+208,52,The road ahead is closed for repairs.,FALSE,
+209,53,Pedestrians are required to use the overpass to cross the highway.,TRUE,
+210,53,Cars are supposed to stop prior to the overpass.,FALSE,
+211,53,Emergency vehicles alone can use the overpass.,FALSE,
+212,53,Only bikes are allowed on the overpass.,FALSE,
+213,54,Vehicles must stop and be checked for brakes.,FALSE,
+214,54,Only trucks need to check their brakes.,FALSE,
+215,54,Vehicles must stop and go no further.,FALSE,
+216,54,"Drivers, especially of heavy vehicles, must check their brakes, usually before going down a steep hill.",TRUE,
+217,55,One can pass the next part of the road using a bicycle.,FALSE,
+218,55,"The driver will slow down before entering this part, since dangerous areas exist.",TRUE,
+219,55,There must be total stopping of a vehicle.,FALSE,
+220,55,This region has no limit for speed.,FALSE,
+221,56,Only emergency vehicles are permitted to pass.,FALSE,
+222,56,Pedestrians only.,FALSE,
+223,56,Vehicles should make a U-turn here.,FALSE,
+224,56,"The road is closed to all traffic because of construction, maintenance, or other causes.",TRUE,
+225,57,"The road ahead becomes narrower, and drivers must proceed with caution.",TRUE,
+226,57,Only one-way traffic is allowed beyond this point.,FALSE,
+227,57,The road merges into another lane.,FALSE,
+228,57,Pedestrians must avoid crossing in this area.,FALSE,
+229,58,The road ahead is restricted to trucks only.,FALSE,
+230,58,The bridge is closed to all traffic.,FALSE,
+231,58,"A narrow bridge is located ahead, and vehicles must proceed with caution.",TRUE,
+232,58,The bridge can be used only for pedestrians.,FALSE,
+233,59,Pedestrians are not permitted to cross the road at this point.,TRUE,
+234,59,Pedestrians have to cross the road at the opposite side.,FALSE,
+235,59,Vehicles must stop for pedestrians.,FALSE,
+236,59,Pedestrian crossing is allowed only during certain hours.,FALSE,
+237,60,Vehicles have to turn left.,FALSE,
+238,60,Vehicles can pass on either side of an obstruction.,TRUE,
+239,60,Only the left lane is available.,FALSE,
+240,60,Vehicles must stop immediately.,FALSE,
+241,61,Vehicles in the rightmost lane must turn right.,TRUE,
+242,61,No right turns are allowed.,FALSE,
+243,61,All vehicles must go straight.,FALSE,
+244,61,The right lane is closed.,FALSE,
+245,62,Left turns are not allowed.,FALSE,
+246,62,Construction has closed this lane.,FALSE,
+247,62,Traffic to turn left is supposed to give right of way.,FALSE,
+248,62,Vehicles in the leftmost lane must turn left.,TRUE,
+249,63,Trucks should slow down.,FALSE,
+250,63,Trucks are not allowed to enter the zone.,TRUE,
+251,63,Trucks are allowed to enter only at specific times.,FALSE,
+252,63,The road ahead is for trucks.,FALSE,
+253,64,A traffic circle ahead of it.,FALSE,
+254,64,A T-junction is ahead.,FALSE,
+255,64,"Road goes in split forming Y, direction.",TRUE,
+256,64,Traffic merges into one lane.,FALSE,
+257,65,Go back into right lane.,FALSE,
+258,65,Right lane for use of emergency only.,FALSE,
+259,65,The road up ahead is blocked.,FALSE,
+260,65,The road goes right behind to the rear.,TRUE,
+261,66,Traffic from the right will merge into the main road.,TRUE,
+262,66,No left turns are permitted.,FALSE,
+263,66,The left lane is closed for maintenance.,FALSE,
+264,66,Vehicles must stop and yield to traffic.,FALSE,
+265,67,The road splits up into two lanes.,FALSE,
+266,67,The width of the road ahead decreases.,TRUE,
+267,67,Vehicles must take a detour.,FALSE,
+268,67,There is one way traffic only ahead.,FALSE,
+269,68,Speed limit ahead.,FALSE,
+270,68,Road closed due to construction.,FALSE,
+271,68,Pedestrian crossing ahead.,FALSE,
+272,68,A pictorial representation of future road directions.,TRUE,
+273,69,The road at the rotunda is one way.,FALSE,
+274,69,A directional diagram for navigating through a roundabout or rotunda.,TRUE,
+275,69,A mandatory stop before turning into the roundabout.,FALSE,
+276,69,No right turn is allowed on the roundabout.,FALSE,
+277,70,"Information about nearby services, such as gas stations or rest areas.",TRUE,
+278,70,A no-parking zone begins.,FALSE,
+279,70,The road ahead is closed for repairs.,FALSE,
+280,70,The area is restricted for commercial vehicles only.,FALSE,
+281,71,Access is pedestrians only.,FALSE,
+282,71,The driver will not halt nor obstruct the junction. It can be freely allowed for the traffic flow.,TRUE,
+283,71,Emergency Vehicles alone can hinder the intersection.,FALSE,
+284,71,If they find it as an intersecting area the vehicle must wait for the passageway.,FALSE,
+285,72,Only emergency vehicles exceeding 5 tons are allowed.,FALSE,
+286,72,Vehicles must stop and weigh their load before proceeding.,FALSE,
+287,72,The road ahead is restricted to bicycles and motorcycles.,FALSE,
+288,72,Vehicles with a gross vehicle mass exceeding 5 tons are prohibited from entering the area.,TRUE,
+289,73,Only emergency vehicles are allowed on the services.,FALSE,
+290,73,Only buses and trucks can use this road.,FALSE,
+291,73,Gives advance notice about services available that include fueling or rest area.,TRUE,
+292,73,Vehicles are supposed to stop before entering the service area.,FALSE,
+293,74,Pedestrians can cross the expressway.,FALSE,
+294,74,Vehicles like bicycles and tricycles are not permitted on the expressway.,TRUE,
+295,74,All vehicles should exit the expressway.,FALSE,
+296,74,This road can be used only by trucks.,FALSE,
+297,75,This exit is only available to trucks.,FALSE,
+298,75,Only the exit ramp must be stopped on.,FALSE,
+299,75,This means that the distance available to the next exit is provided in advance.,TRUE,
+300,75,This is an exit allowed only for use by emergency vehicles.,FALSE,
+301,76,It gives directional guidance for numbered exits.,TRUE,
+302,76,Only permitted vehicles are allowed to exit through the numbered exits.,FALSE,
+303,76,Only pedestrians are allowed to cross the exit zone.,FALSE,
+304,76,The use of the numbered exit is restricted only to emergency vehicles.,FALSE,
+305,77,Vehicles on the right lane must give way to oncoming traffic.,FALSE,
+306,77,Slow-moving vehicles must stay in the right lane to allow faster vehicles to pass.,TRUE,
+307,77,Only emergency vehicles can use the right lane.,FALSE,
+308,77,Only trucks are allowed in the right lane.,FALSE,
+309,78,Slow down and continue since the way ahead is clear,FALSE,
+310,78,"Pull over, make a lookout, and continue driving when safe.",TRUE,
+311,78,Resume driving at full speed because you don't need to worry,FALSE,
+312,78,"Sound your horn, then go to get across.",FALSE,
+313,79,Accelerate into the intersection before the other vehicle,FALSE,
+314,79,Slow down and allow the other vehicle to go by so that you can cross.,TRUE,
+315,79,"Come to a complete stop, even if it is clear.",FALSE,
+316,79,Honk to alert the other driver and move forward.,FALSE,
+317,80,Quickly make the left turn before the oncoming vehicle gets close to you.,FALSE,
+318,80,Wait for the car to pass in the other direction before turning left.,TRUE,
+319,80,Honk the horn to slow the other car down.,FALSE,
+320,80,Make the turn as long as there is enough space ahead.,FALSE,
+321,81,Turn left if it is safe.,FALSE,
+322,81,U-turn if you need to change direction.,FALSE,
+323,81,Slow down and turn right slowly.,FALSE,
+324,81,Go straight.,TRUE,
+325,82,Keep driving the wrong way and flash your lights.,FALSE,
+326,82,Accelerate to pass the oncoming traffic before they get in your way.,FALSE,
+327,82,Stay in the right lane except when overtaking.,TRUE,
+328,82,Honk and wait for others to give way,FALSE,
+329,83,Drive as far to the left as is safe.,FALSE,
+330,83,Stop on the right and wait for direction.,FALSE,
+331,83,Ignore the sign and go anywhere you want.,FALSE,
+332,83,Keep to the left lane except to overtake.,TRUE,
+333,84,Ignore the sign if the road is empty.,FALSE,
+334,84,Slow down or adjust your speed to allow merging vehicles to enter safely.,TRUE,
+335,84,Always use the right lane for regular driving.,FALSE,
+336,84,Only keep left when approaching a turn.,FALSE,
+337,85,Speed up to prevent merging vehicles from entering your lane.,FALSE,
+338,85,Turn back or take a detour.,TRUE,
+339,85,Honk your horn to warn merging vehicles to stop.,FALSE,
+340,85,Move into the merging lane to block incoming traffic.,FALSE,
+341,86,Return and go ahead on some other road.,TRUE,
+342,86,Go ahead if the road is clear.,FALSE,
+343,86,Drive cautiously and slow down.,FALSE,
+344,86,Stop and wait for the road to clear.,FALSE,
+345,87,Cross the road as no one is using it.,FALSE,
+346,87,Stop and seek permission from the road's owner to enter.,FALSE,
+347,87,Use the overpass to cross safely.,TRUE,
+348,87,Park your three-wheeler and proceed by walking.,FALSE,
+349,88,Run across the road quickly.,FALSE,
+350,88,Go straight or find another way around the corner to turn right legally.,TRUE,
+351,88,Cross the road anywhere if there are no cars.,FALSE,
+352,88,Wait until traffic stops before crossing.,FALSE,
+353,89,Turn right anyway since there is no policeman around.,FALSE,
+354,89,Honk to alert other motorists before you turn right.,FALSE,
+355,89,Stop and wait for traffic to clear before turning right.,FALSE,
+356,89,Proceed straight and find a legal left-turn.,TRUE,
+357,90,Stop in the middle of the road until traffic clears.,FALSE,
+358,90,Continue driving until you find a legal U-turn or intersection.,TRUE,
+359,90,Turn left if no one is watching.,FALSE,
+360,90,Reverse and make the left turn illegally.,FALSE,
+361,91,Make a U-turn anyway if no police officers are around.,FALSE,
+362,91,Stop in the middle of the road and wait for an opening.,FALSE,
+363,91,Wait until you exit the no-overtaking zone before passing.,TRUE,
+364,91,Reverse your car to return to the exit.,FALSE,
+365,92,Ensure you do not exceed 80 km/h.,TRUE,
+366,92,Drive faster if no police are around.,FALSE,
+367,92,Ignore the sign if traffic is light.,FALSE,
+368,92,Only reduce speed if a speed camera is visible.,FALSE,
+369,93,You must keep moving and not stop at all.,FALSE,
+370,93,You may stop momentarily to pick up or drop off riders.,TRUE,
+371,93,You can park in this zone for an indefinite amount of time.,FALSE,
+372,93,This zone is reserved for emergency vehicles only.,FALSE,
+373,94,Unload the cargo as fast as you can and leave.,FALSE,
+374,94,Wait in your vehicle for the area to clear.,FALSE,
+375,94,Ignore the sign and unload.,FALSE,
+376,94,Seek another location that allows loading and unloading.,TRUE,
+377,95,You disregard the sign and still pick passengers on the regular fare.,FALSE,
+378,95,Proceed to find an alternative place wherein the passengers could board and get off.,TRUE,
+379,95,Hurry to pick and drop off passengers.,FALSE,
+380,95,You only stop when passengers seem in a rush.,FALSE,
+381,96,Ignore this if there are no cars.,FALSE,
+382,96,"Leave car, with lights blinking.",FALSE,
+383,96,Search for a Parking spot,TRUE,
+384,96,"Park for sometime, leave at the earliest possible moment.",FALSE,
+385,97,Park for a few minutes if no one is watching.,FALSE,
+386,97,Park and stay inside the vehicle.,FALSE,
+387,97,Stop but keep the engine running.,FALSE,
+388,97,Look for a legal parking spot.,TRUE,
+389,98,You can park here if you leave your flashers on.,FALSE,
+390,98,It only indicates that motorcycles can park in this area.,FALSE,
+391,98,Any car parked in this space is subject to towing.,TRUE,
+392,98,Parking is permitted at certain times.,FALSE,
+393,99,Park since the restriction does not apply on weekends.,TRUE,
+394,99,Avoid parking because the sign means no parking at all times.,FALSE,
+395,99,Park but only for a short period.,FALSE,
+396,99,Overlook the sign and park when you want.,FALSE,
+397,100,Ignore the sign if you are traveling at a slow speed.,FALSE,
+398,100,Put on your seat belt only when you spot a traffic policeman.,FALSE,
+399,100,Make sure you and all passengers are buckled up with seat belts.,TRUE,
+400,100,Permit only front passengers to use their seat belts.,FALSE,
+401,101,Not even blow horn.,TRUE,
+402,101,Honk if traffic is moving too slowly.,FALSE,
+403,101,Honk to warn pedestrians.,FALSE,
+404,101,Ignore the sign and honk as needed.,FALSE,
+405,102,Honk at pedestrians to hurry up.,FALSE,
+406,102,Slow down and prepare to stop if needed.,TRUE,
+407,102,Accelerate to get through the crossing as soon as possible.,FALSE,
+408,102,Ignore pedestrians unless they are already on the road.,FALSE,
+409,103,Continue at normal speed since children should use the sidewalk.,FALSE,
+410,103,Honk to warn children.,FALSE,
+411,103,Slow down and stop if children are crossing.,TRUE,
+412,103,Speed up to avoid waiting.,FALSE,
+413,104,Drive in the bike lane unless there are riders.,FALSE,
+414,104,Honk the horn at any riders in order to get through.,FALSE,
+415,104,Speed up through the bike lane to get it over with faster.,FALSE,
+416,104,Be careful not to drive into the bike lane.,TRUE,
+417,105,Honk your horn to signal them to hurry up.,FALSE,
+418,105,Speed up before they enter the crosswalk completely so they don't have to wait.,FALSE,
+419,105,Slow down and stop if necessary to allow them to cross safely.,FALSE,
+420,105,Ignore the sign and drive by at normal speed.,FALSE,
+421,106,Ignore the sign and continue driving at regular pace.,FALSE,
+422,106,Slow down prior to making the turn and use caution as you steer around it.,TRUE,
+423,106,Speed up to make the turn quicker.,FALSE,
+424,106,Drive at a steady pace and depend on your brakes during the turn.,FALSE,
+425,107,Adjust your speed and steer smoothly into the curve.,TRUE,
+426,107,Speed up to clear the curve quickly.,FALSE,
+427,107,Move to the left lane and take the curve faster.,FALSE,
+428,107,Honk your horn before entering the curve.,FALSE,
+429,108,Curve at sharp speed at the last moment.,FALSE,
+430,108,Slow down and curve by staying in the lane.,TRUE,
+431,108,Move on to the right lane and thus curve more promptly.,FALSE,
+432,108,Ignore the curve sign and speed along as normal.,FALSE,
+433,109,You need to back up your vehicle at the next curve.,FALSE,
+434,109,You need to come to a stop and look for oncoming traffic.,FALSE,
+435,109,The road ahead is closed.,FALSE,
+436,109,"The road has two successive curves, to the right.",TRUE,
+437,110,Keep going and expect other road users to give way.,FALSE,
+438,110,Come to a stop even if the road is clear.,FALSE,
+439,110,"Slow down, be alert, and be ready to yield or stop if appropriate.",TRUE,
+440,110,Speed through the intersection before traffic arrives.,FALSE,
+441,111,Drive straight through the roundabout without slowing down.,FALSE,
+442,111,"Stop completely before entering, even if the road is clear.",FALSE,
+443,111,"Slow down, yield to traffic already in the roundabout, and enter when it is safe.",TRUE,
+444,111,Speed up and enter the roundabout quickly.,FALSE,
+445,112,Speed up to pass the traffic light before it changes.,FALSE,
+446,112,Ignore the traffic light and proceed at the same speed.,FALSE,
+447,112,Honk to advise other traffic of your approach.,FALSE,
+448,112,Be prepared to stop or adjust your speed according to the traffic light ahead.,TRUE,
+449,113,Slow down and prepare to stop for pedestrians.,TRUE,
+450,113,Speed up to clear the crossing before pedestrians arrive.,FALSE,
+451,113,Honk to alert pedestrians of your presence.,FALSE,
+452,113,Ignore the sign and proceed at normal speed.,FALSE,
+453,114,Yield to pedestrian when they're crossing and slow down,TRUE,
+454,114,Accelerate in case one doesn't have to stop for walkers,FALSE,
+455,114,Honking at passers-by to make them move in a hurry through the street,FALSE,
+456,114,Stop and permit all walkers to go through them. These can include in the street.,FALSE,
+457,115,Accelerate in order not to stop for kids.,FALSE,
+458,115,Stop and slow down when kids are crossing,TRUE,
+459,115,"Drive at a normal pace, kids have to use the sidewalk.",FALSE,
+460,115,Honk to alert kids to your presence.,FALSE,
+461,116,Cross wherever it is most convenient.,FALSE,
+462,116,Stop when automobiles stop and go wherever.,FALSE,
+463,116,Look for a pedestrian crossing and cross over at it.,TRUE,
+464,116,Cross at the first corner and don't mind the sign.,FALSE,
+465,117,Speed through a rapid pass down the bike path.,FALSE,
+466,117,Ignore the sign.,FALSE,
+467,117,Honking a warning to alert bicycles to move.,FALSE,
+468,117,Slow down and move out of your cycling path.,TRUE,
+469,118,Sound your honk to make a path for yourself.,FALSE,
+470,118,"Maintain your pace, for you have the right of way.",FALSE,
+471,118,Ignore the sign because school hours are almost over.,FALSE,
+472,118,Slow down and be more careful for kids crossing over.,TRUE,
+473,119,That it is a no-entry zone for cars,FALSE,
+474,119,That you have to stop and wait for a sign,FALSE,
+475,119,"That a child can be in, near, or crossing a street",TRUE,
+476,119,That there is a police checkpoint ahead.,FALSE,
+477,120,Try to squeeze through carefully.,FALSE,
+478,120,Accelerate to pass through in a hurry.,FALSE,
+479,120,Stop and re-take your truck's measurement.,FALSE,
+480,120,Look for an alternative route for taller cars.,TRUE,
+481,121,Please drive cautiously and slow down,TRUE,
+482,121,Keep your pace and drive regularly.,FALSE,
+483,121,To drive at a fast pace,FALSE,
+484,121,Ignore the sign if no other cars are visible.,FALSE,
+485,122,Plan your route and transition into your correct route early.,TRUE,
+486,122,Disregard the sign and make a spontaneous decision at the eleventh hour.,FALSE,
+487,122,Halt in the street in the middle and read them all.,FALSE,
+488,122,Squeeze through the intersection in a rapid pace.,FALSE,
+489,123,It is a temporary sign for construction.,FALSE,
+490,123,It signifies a route to one big location or outlet.,TRUE,
+491,123,Road in front is shut down.,FALSE,
+492,123,It is a sign for an accident zone.,FALSE,
+493,124,Turn at the eleventh hour and disobey the sign.,FALSE,
+494,124,Sudden veer onto a highway in a city.,FALSE,
+495,124,"Signal first, use your mirrors, and move over to your right-hand lane in preparation for your turn.",TRUE,
+496,124,Stop and then wait for all cars to pass through first.,FALSE,
+497,125,Use it in checking that one is getting onto the correct highway.,TRUE,
+498,125,Disregard it and rely only on GPS.,FALSE,
+499,125,Get out at full speed towards the exit.,FALSE,
+500,125,Come to a stop at sign to interpret its reading.,FALSE,
+501,126,It will soon stop at a road.,FALSE,
+502,126,It informs you that you're moving in the correct direction.,TRUE,
+503,126,It informs you to make a turn at the following off-ramp.,FALSE,
+504,126,Warns of an impending traffic checkpoint.,FALSE,
+505,127,Prepare to pay for toll fee posted at toll stop.,TRUE,
+506,127,Zip through toll gate in a rush.,FALSE,
+507,127,Stop and have an attendant pass through without payment.,FALSE,
+508,127,Don't pay tolls and drive through anyway.,FALSE,
+509,128,Overtake other cars in the opposite lane.,FALSE,
+510,128,Choose your preferred direction in a specific lane.,TRUE,
+511,128,Ignore the signs and choose any lane.,FALSE,
+512,128,Stop in the middle of the street to make a decision.,FALSE,
+513,129,Cross at the first intersection over.,FALSE,
+514,129,Walk down to a safer location and then cross over.,FALSE,
+515,129,Cross over at an overpass when crossing a street.,TRUE,
+516,129,Stop at cars and cross wherever one pleases.,FALSE,
+517,130,Keep driving with no concern for your brakes.,FALSE,
+518,130,Accelerate to go down in a rush.,FALSE,
+519,130,Do nothing and follow your routine.,FALSE,
+520,130,Stop at a safe location and test your brakes.,TRUE,
+521,131,"Don't slow down, except in slow moving traffic.",FALSE,
+522,131,Do nothing and follow your routine.,FALSE,
+523,131,Lower your speed to ensure safe driving.,TRUE,
+524,131,Zip through the zone in a rapid pace.,FALSE,
+525,132,Search for an alternative route in case the road cannot be traveled.,TRUE,
+526,132,"Drive and move through, and pass through the barrier.",FALSE,
+527,132,Stop and allow the road to become free.,FALSE,
+528,132,Go ahead in case no workers can be seen working.,FALSE,
+529,133,Get slow and stage for a merge into a single lane.,TRUE,
+530,133,To pass slow moving cars when a highway narrows.,FALSE,
+531,133,Disregard the sign and drive in the center of the street.,FALSE,
+532,133,Stop and wait for the road to widen again.,FALSE,
+533,134,Speed in an attempt to beat everyone else over the bridge.,FALSE,
+534,134,Stop and wait for a sign to cross over .,FALSE,
+535,134,Honking your horn to clear a path for yourself when driving.,FALSE,
+536,134,Slow down and prepare to yield if necessary before crossing.,TRUE,
+537,135,Signal drivers to slow down while you cross.,FALSE,
+538,135,Look for a designated pedestrian crossing or overpass.,TRUE,
+539,135,Cross the road quickly if no cars are coming.,FALSE,
+540,135,Cross the road wherever you see a gap in traffic.,FALSE,
+541,136,Cross over in the median.,FALSE,
+542,136,Opt for either the left or the right in a safe manner.,TRUE,
+543,136,Stop and make the road free of obstacles first.,FALSE,
+544,136,Use only the left to go through.,FALSE,
+545,137,Straighten out in extreme rightmost position.,FALSE,
+546,137,Merge into the left lane to avoid turning.,FALSE,
+547,137,Turn right at the intersection in preparation.,TRUE,
+548,137,Go straight ahead.,FALSE,
+549,138,Stop and wait for a change in lights.,FALSE,
+550,138,Turn left at an intersection when warranted.,TRUE,
+551,138,Straight down the leftmost lane drive.,FALSE,
+552,138,Merge into the right lane to avoid turning.,FALSE,
+553,139,Go onto the street if it is shortest path.,FALSE,
+554,139,Drive through in case no one occupies the restricted zone.,FALSE,
+555,139,Stop and then move with permission.,FALSE,
+556,139,Turn onto a secondary route that trucks can access.,TRUE,
+557,140,Stop and go along the road that appears safer to go straight.,FALSE,
+558,140,Proceed straight on through the Y-junction without slowing a notch of speed.,FALSE,
+559,140,Return. The way ahead is a dead end.,FALSE,
+560,140,Slow down and yield if necessary.,TRUE,
+561,141,You need to go back then right turn at the junction,FALSE,
+562,141,The right hand road is closed.,FALSE,
+563,141,"A road joins to the right, behind you.",TRUE,
+564,141,You need not reduce speed as the junction is behind you.,FALSE,
+565,142,Adjust your speed to allow vehicles merging from the right to enter safely.,TRUE,
+566,142,Completely stop and let all merging vehicles pass.,FALSE,
+567,142,Immediately move left into another lane to avoid merging traffic.,FALSE,
+568,142,Honk to indicate to merging traffic to stop.,FALSE,
+569,143,Speed up to pass other vehicles before the road narrows.,FALSE,
+570,143,Ignore the sign and maintain your current speed.,FALSE,
+571,143,Ease off and wait for the road to open up again.,FALSE,
+572,143,Slow down and prepare to merge into a single lane if necessary.,TRUE,
+573,144,Ignore the sign and drive in any lane.,FALSE,
+574,144,Stop and decide your direction in the middle of the road.,FALSE,
+575,144,Follow the arrows on the sign to choose the correct lane for your destination.,TRUE,
+576,144,Change lanes abruptly to follow other vehicles.,FALSE,
+577,145,Ignore the sign and exit where you feel comfortable.,FALSE,
+578,145,Signal your intended exit and change to the appropriate lane before entering the roundabout.,TRUE,
+579,145,Enter the roundabout in any lane and decide your exit while inside.,FALSE,
+580,145,Stop inside the roundabout to determine your exit.,FALSE,
+581,146,"Decide whether or not to stop for fuel, food, or rest.",TRUE,
+582,146,Keep driving and disregard the sign if you do not want services.,FALSE,
+583,146,Pull over right away so you don't miss the service area.,FALSE,
+584,146,Take the next exit regardless of where you are.,FALSE,
+585,147,Enter the intersection and wait for the traffic to move.,FALSE,
+586,147,Stop in the middle of the intersection if you spot some open space.,FALSE,
+587,147,Honk your horn to clear the way and go forward.,FALSE,
+588,147,Wait behind the intersection until traffic clears to not block it.,TRUE,
+589,148,Proceed cautiously if the road looks strong enough to support your vehicle.,FALSE,
+590,148,Enter the road only if there is no visible enforcement.,FALSE,
+591,148,Turn around or find an alternate route if your vehicle exceeds the weight limit.,TRUE,
+592,148,Ignore the sign and proceed as usual.,FALSE,
+593,149,Drive faster to get to the service area sooner.,FALSE,
+594,149,Plan to stop if you need fuel or other services.,FALSE,
+595,149,"Stop immediately, even if you don't need fuel.",FALSE,
+596,149,Ignore the sign and continue without stopping.,FALSE,
+597,150,Avoid entering the expressway if your vehicle is listed as prohibited.,TRUE,
+598,150,Enter the expressway if the road looks clear.,FALSE,
+599,150,Stop and await the authorization from authorities.,FALSE,
+600,150,Slow drive on the expressway so no one catches the view.,FALSE,
+601,151,Speed up to take the exit as quickly as possible.,FALSE,
+602,151,Stop immediately and decide if you want to exit.,FALSE,
+603,151,Ignore the sign and decide at the last moment.,FALSE,
+604,151,Prepare to move to the appropriate lane for the exit.,TRUE,
+605,152,Continue in your current lane and exit at the last moment.,FALSE,
+606,152,Stop before reaching the exit to check the sign.,FALSE,
+607,152,Ignore the numbered exit and take the next one.,FALSE,
+608,152,Shift to the appropriate lane for the numbered exit as directed by the sign.,TRUE,
+609,153,Stay in the left lane and continue your journey at your current speed.,FALSE,
+610,153,Pull over onto the side of the road and let other vehicles pass you.,FALSE,
+611,153,Drive in the center of the road to avoid both lanes.,FALSE,
+612,153,Change to the right lane to yield the right-of-way to passing vehicles traveling faster.,TRUE,
+613,154,beginner1_stopsign.png,TRUE,https://drive.google.com/open?id=1AY5_lBVEnag_Hv7pqu45xA5bios0hnWo&usp=drive_copy
+614,154,expert28_SlowVehiclesUseRightLane.png,FALSE,https://drive.google.com/open?id=1JSuUUW_yrnU6bvJu7YolQQVsE0lwVWeg&usp=drive_copy
+615,154,expert24_ExitDirectionSignForNumberedExits.webp,FALSE,https://drive.google.com/open?id=1mu1Vkka7Xf08EbZF_msupdk2I_oEpQsF&usp=drive_copy
+616,154,beginner5_oneway.png,FALSE,https://drive.google.com/open?id=14FnQJQ5AdI_EW3E1kKACBSomaATZSoOJ&usp=drive_copy
+617,155,beginner12_noentry.png,FALSE,https://drive.google.com/open?id=1ShfRmIVk-ATngSCmEdFeTCoE4cVf1HLL&usp=drive_copy
+618,155,beginner100_useoverpass.png,FALSE,https://drive.google.com/open?id=1ORso2gBco-jwXWJ9qjZQDMSugHT6U9tv&usp=drive_copy
+619,155,beginner2_giveway.png,TRUE,https://drive.google.com/open?id=1g8yyKdgDsZL5Eq0BVQW0_afeSzGHwA6O&usp=drive_copy
+620,155,beginner103_checkbrakes.png,FALSE,https://drive.google.com/open?id=1rXVI-FGfvhC9MpNXkhzw0XGMYf1jn4Ik&usp=drive_copy
+621,156,beginner104_reducespeed.png,FALSE,https://drive.google.com/open?id=1DdVwV6dnUkDewhef24Jjc3dCpnmvckL6&usp=drive_copy
+622,156,beginner3_leftturner.png,TRUE,https://drive.google.com/open?id=10AjA3yKqheSlSfEGGPBsR9SWPIMYl5dU&usp=drive_copy
+623,156,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+624,156,beginner40_beawareofschool.png,FALSE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+625,157,beginner41_bikelaneahead.png,FALSE,https://drive.google.com/open?id=1djvZMAjj8uXfG6e4lb4FvTFdjc4fFRAr&usp=drive_copy
+626,157,beginner42_beawareofpersonswith.webp,FALSE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+627,157,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+628,157,beginner4_noturns.png,TRUE,https://drive.google.com/open?id=1fzjCkwe9LY8ZGITT8hFLBjyzQi4Zbmbj&usp=drive_copy
+629,158,beginner5_oneway.png,TRUE,https://drive.google.com/open?id=14FnQJQ5AdI_EW3E1kKACBSomaATZSoOJ&usp=drive_copy
+630,158,advanced40_servicesignwithnameofservice.png,FALSE,https://drive.google.com/open?id=1HHTmA3y9WQb8mpU1JM_YgsSyR4zXRz1-&usp=drive_copy
+631,158,expert3_DoNotBlockIntersection.png,FALSE,https://drive.google.com/open?id=1mqLbnOcOLatIzrwQS2h-bz8SAqgHLStE&usp=drive_copy
+632,158,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,FALSE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+633,159,expert16_ServiceSign(AdvanceSignwithNameofService).png,FALSE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+634,159,beginner6_keepright.png,TRUE,https://drive.google.com/open?id=1dBlPOusLwpIAP3YeFkSbtwV89xm3xSad&usp=drive_copy
+635,159,advanced16_halfyjunctionbehindright.webp,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+636,159,advanced22_apporachtointersectionmergingtrafficright.webp,FALSE,https://drive.google.com/open?id=10THrBhpFo9NUoHnmNl9pV9Bvb4rQBS8y&usp=drive_copy
+637,160,beginner7_keepleft.webp,TRUE,https://drive.google.com/open?id=14c3tYCXQy85c98hOLzCm65h8ALTmf5bL&usp=drive_copy
+638,160,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,FALSE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+639,160,expert16_ServiceSign(AdvanceSignwithNameofService).png,FALSE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+640,160,expert17_ProhibitedonExpressway.png,FALSE,https://drive.google.com/open?id=1LNyyXq9jBJCO9qacEfed0KlYypCq997p&usp=drive_copy
+641,161,expert18_ExitAdvanceSign(With Distance).png,FALSE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+642,161,beginner10_mergingtraffic.png,TRUE,https://drive.google.com/open?id=1ELbXw63GqJ9-puUhjMvbNPoXpOMrcqNw&usp=drive_copy
+643,161,beginner62_trafficlights.webp,FALSE,https://drive.google.com/open?id=1Y3yBgsX0jAMb977GkDcBhPty8OcloF7m&usp=drive_copy
+644,161,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+645,162,beginner71_pedestriancrossing.png,FALSE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+646,162,beginner72_beawareandstopforchildren.png,FALSE,https://drive.google.com/open?id=1PGqRmn_nOUt02qKbGlc8Vy7V6xuAE5SV&usp=drive_copy
+647,162,beginner74_advicetothepedestrian.png,FALSE,https://drive.google.com/open?id=18CDSyj_QoYAPGZg3phXz7jZ2Ig4C5uar&usp=drive_copy
+648,162,beginner12_noentry.png,TRUE,https://drive.google.com/open?id=1ShfRmIVk-ATngSCmEdFeTCoE4cVf1HLL&usp=drive_copy
+649,163,beginner87_intersectiondirectionsignright.png,FALSE,https://drive.google.com/open?id=1DGta7Wu7cOLyo_1G2rQ44-nDmTVIQFsN&usp=drive_copy
+650,163,beginner90_intersectiondirectionsignwithroutenumber.png,FALSE,https://drive.google.com/open?id=1XHMms3FufRfbxOsGEnaV66eXvMDN7lAc&usp=drive_copy
+651,163,beginner17_noentryfortricycles.png,TRUE,https://drive.google.com/open?id=1yeZCqEIf7EPYSM7ULYoa3kPtGytkA5Dc&usp=drive_copy
+652,163,beginner103_checkbrakes.png,FALSE,https://drive.google.com/open?id=1rXVI-FGfvhC9MpNXkhzw0XGMYf1jn4Ik&usp=drive_copy
+653,164,beginner19_useoverpass.png,TRUE,https://drive.google.com/open?id=1hCLYGafNMwlSNkDPThU7S_oOj61onyB0&usp=drive_copy
+654,164,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+655,164,advanced16_halfyjunctionbehindright.webp,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+656,164,advanced22_apporachtointersectionmergingtrafficright.webp,FALSE,https://drive.google.com/open?id=10THrBhpFo9NUoHnmNl9pV9Bvb4rQBS8y&usp=drive_copy
+657,165,beginner20_usepedestriancrossing.png,TRUE,https://drive.google.com/open?id=1BKQ6YNKlKmnILK1E9tUoIWCf7zhSASf8&usp=drive_copy
+658,165,beginner79_signsofschool.png,FALSE,https://drive.google.com/open?id=1C284zaz9eKownjHBbXKwABt64aR-iZHD&usp=drive_copy
+659,165,beginner80_signsofplayground.png,FALSE,https://drive.google.com/open?id=1GLTx-uCklS78ZMjjthn6ZP5siSTG8x9I&usp=drive_copy
+660,165,beginner81_maximumheight.webp,FALSE,https://drive.google.com/open?id=19KC14spMf4C8Cnedexty7Mh8ep9hUOPJ&usp=drive_copy
+661,166,beginner82_slowdownaccident.png,FALSE,https://drive.google.com/open?id=1HaqVPeRrWfjV29tOIiWP97rpsBd8u13S&usp=drive_copy
+662,166,beginner84_stackdirectionsignmultiple.png,FALSE,https://drive.google.com/open?id=1WiWBaoselJoI2nBLbbEJ-IcsjjnNA1wN&usp=drive_copy
+663,166,beginner26_minimumspeed.webp,TRUE,https://drive.google.com/open?id=1xfsCK0kPuZ1rJ1yNZDR432IaTxJJDWEX&usp=drive_copy
+664,166,beginner97_tollcharges.png,FALSE,https://drive.google.com/open?id=1MHRFUILAYcIfZWKKi-EWRJrJzBb2b-30&usp=drive_copy
+665,167,beginner98_lanedirectionsigns.png,FALSE,https://drive.google.com/open?id=17l08Dmq2H3wNQ3cZtrhn9j6yNUSWkYnt&usp=drive_copy
+666,167,beginner100_useoverpass.png,FALSE,https://drive.google.com/open?id=1ORso2gBco-jwXWJ9qjZQDMSugHT6U9tv&usp=drive_copy
+667,167,beginner27_loadingzone.png,TRUE,https://drive.google.com/open?id=1C_B2UwwwRDagYfQLMthz8K-A22JfRojM&usp=drive_copy
+668,167,beginner37_useseatbelt.png,FALSE,https://drive.google.com/open?id=1CDk6x2u3K7f1-dVrDUld_0ARsWBDBcvo&usp=drive_copy
+669,168,beginner38_noblowing.png,FALSE,https://drive.google.com/open?id=1dFTBUY0w1Bpb4ROBlDpaiI9W_DbkoCZb&usp=drive_copy
+670,168,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+671,168,beginner40_beawareofschool.png,FALSE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+672,168,beginner28_loadingandunloading.png,TRUE,https://drive.google.com/open?id=1j-Zql6aPypzimFZ--9D5neluWBwDJTIO&usp=drive_copy
+673,169,beginner82_slowdownaccident.png,FALSE,https://drive.google.com/open?id=1HaqVPeRrWfjV29tOIiWP97rpsBd8u13S&usp=drive_copy
+674,169,beginner29_nowaiting.png,TRUE,https://drive.google.com/open?id=1TvLo1IrMHqr3PAzuD7vCpTYKDBBjkmSC&usp=drive_copy
+675,169,beginner85_stackdirectionsignsingle.png,FALSE,https://drive.google.com/open?id=1X28XPntvH4LqIKz932jjiQscoBRO5rrB&usp=drive_copy
+676,169,beginner87_intersectiondirectionsignright.png,FALSE,https://drive.google.com/open?id=1DGta7Wu7cOLyo_1G2rQ44-nDmTVIQFsN&usp=drive_copy
+677,170,beginner33_noparkingbawalpumarada.png,TRUE,https://drive.google.com/open?id=1qiMnCYW6ChjjfO5oKbF0bV6ggirnk5PQ&usp=drive_copy
+678,170,beginner38_noblowing.png,FALSE,https://drive.google.com/open?id=1dFTBUY0w1Bpb4ROBlDpaiI9W_DbkoCZb&usp=drive_copy
+679,170,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+680,170,beginner40_beawareofschool.png,FALSE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+681,171,beginner41_bikelaneahead.png,FALSE,https://drive.google.com/open?id=1djvZMAjj8uXfG6e4lb4FvTFdjc4fFRAr&usp=drive_copy
+682,171,beginner42_beawareofpersonswith.webp,FALSE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+683,171,beginner34_noparkingtowawayzone.webp,TRUE,https://drive.google.com/open?id=1MmVAE7O27hGqyCWZiqXh7vtGbw9Y65-L&usp=drive_copy
+684,171,beginner19_useoverpass.png,FALSE,https://drive.google.com/open?id=1hCLYGafNMwlSNkDPThU7S_oOj61onyB0&usp=drive_copy
+685,172,beginner21_noright.png,FALSE,https://drive.google.com/open?id=16Vilc3gAAIRmW9d0ERfnhj0PDHbWLbXt&usp=drive_copy
+686,172,beginner22_noleft.png,FALSE,https://drive.google.com/open?id=1xRwwNxusNlp-YWOVZJKnEcpE6-diSMdK&usp=drive_copy
+687,172,beginner35_noparkinganytime.png,TRUE,https://drive.google.com/open?id=1ZlnJnpUnjYUMmuvVSgY9kTx3B3rghNZ8&usp=drive_copy
+688,172,beginner55_intersectionahead.png,FALSE,https://drive.google.com/open?id=1IDQ64-Z1Odb99tofKu_WdUaeR45wOuu2&usp=drive_copy
+689,173,beginner61_roundabout.webp,FALSE,https://drive.google.com/open?id=1mDdZ4w5loznt7uPyloxGyoeoYOfMpxqr&usp=drive_copy
+690,173,beginner62_trafficlights.webp,FALSE,https://drive.google.com/open?id=1Y3yBgsX0jAMb977GkDcBhPty8OcloF7m&usp=drive_copy
+691,173,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+692,173,beginner36_nostoppinganytime.png,TRUE,https://drive.google.com/open?id=1sghx5uu-D6Ox1Xy0cXuKzvfw_WYrCDKE&usp=drive_copy
+693,174,beginner37_useseatbelt.png,TRUE,https://drive.google.com/open?id=1CDk6x2u3K7f1-dVrDUld_0ARsWBDBcvo&usp=drive_copy
+694,174,advanced4_leftlanemust.png,FALSE,https://drive.google.com/open?id=1a0BTZvZUPa7yHlIEadJQ8VucowRbQwac&usp=drive_copy
+695,174,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+696,174,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+697,175,beginner38_noblowing.png,TRUE,https://drive.google.com/open?id=1dFTBUY0w1Bpb4ROBlDpaiI9W_DbkoCZb&usp=drive_copy
+698,175,beginner6_keepright.png,FALSE,https://drive.google.com/open?id=1dBlPOusLwpIAP3YeFkSbtwV89xm3xSad&usp=drive_copy
+699,175,beginner7_keepleft.webp,FALSE,https://drive.google.com/open?id=14c3tYCXQy85c98hOLzCm65h8ALTmf5bL&usp=drive_copy
+700,175,beginner10_mergingtraffic.png,FALSE,https://drive.google.com/open?id=1ELbXw63GqJ9-puUhjMvbNPoXpOMrcqNw&usp=drive_copy
+701,176,beginner12_noentry.png,FALSE,https://drive.google.com/open?id=1ShfRmIVk-ATngSCmEdFeTCoE4cVf1HLL&usp=drive_copy
+702,176,beginner17_noentryfortricycles.png,FALSE,https://drive.google.com/open?id=1yeZCqEIf7EPYSM7ULYoa3kPtGytkA5Dc&usp=drive_copy
+703,176,beginner39_beawareofpedestrian.webp,TRUE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+704,176,beginner22_noleft.png,FALSE,https://drive.google.com/open?id=1xRwwNxusNlp-YWOVZJKnEcpE6-diSMdK&usp=drive_copy
+705,177,beginner23_nouturn.png,FALSE,https://drive.google.com/open?id=1YyLcEkAMEwgcV4FRsd6iFLGoywhVkjVK&usp=drive_copy
+706,177,beginner40_beawareofschool.png,TRUE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+707,177,beginner28_loadingandunloading.png,FALSE,https://drive.google.com/open?id=1j-Zql6aPypzimFZ--9D5neluWBwDJTIO&usp=drive_copy
+708,177,beginner30_noloading.png,FALSE,https://drive.google.com/open?id=1niWBI8uss9z0etaBIJNLq0j6FZm7TL68&usp=drive_copy
+709,178,beginner41_bikelaneahead.png,TRUE,https://drive.google.com/open?id=1djvZMAjj8uXfG6e4lb4FvTFdjc4fFRAr&usp=drive_copy
+710,178,beginner31_bawalmagsakay.png,FALSE,https://drive.google.com/open?id=1-ttZdhYgmsi2A9VLmWS3zTushXXJg2nl&usp=drive_copy
+711,178,beginner32_noparking.png,FALSE,https://drive.google.com/open?id=1lZEoE2DI1Wasj51dF6N-q7OuWCP621HR&usp=drive_copy
+712,178,beginner34_noparkingtowawayzone.webp,FALSE,https://drive.google.com/open?id=1MmVAE7O27hGqyCWZiqXh7vtGbw9Y65-L&usp=drive_copy
+713,179,beginner42_beawareofpersonswith.webp,TRUE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+714,179,beginner40_beawareofschool.png,FALSE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+715,179,beginner41_bikelaneahead.png,FALSE,https://drive.google.com/open?id=1djvZMAjj8uXfG6e4lb4FvTFdjc4fFRAr&usp=drive_copy
+716,179,beginner42_beawareofpersonswith.webp,FALSE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+717,180,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+718,180,beginner47_curveright.webp,FALSE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+719,180,beginner31_bawalmagsakay.png,FALSE,https://drive.google.com/open?id=1-ttZdhYgmsi2A9VLmWS3zTushXXJg2nl&usp=drive_copy
+720,180,beginner43_sharpturnright.webp,TRUE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+721,181,beginner48_curveleft.webp,FALSE,https://drive.google.com/open?id=15sUZR-lTbTmP8eQH1Z-pwy-pbn4rJiSe&usp=drive_copy
+722,181,beginner47_curveright.webp,TRUE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+723,181,beginner49_reversecurveright.webp,FALSE,https://drive.google.com/open?id=1lfYgkzzjoGR76x2hHcB7I1Npf3vnZpCG&usp=drive_copy
+724,181,beginner55_intersectionahead.png,FALSE,https://drive.google.com/open?id=1IDQ64-Z1Odb99tofKu_WdUaeR45wOuu2&usp=drive_copy
+725,182,beginner61_roundabout.webp,FALSE,https://drive.google.com/open?id=1mDdZ4w5loznt7uPyloxGyoeoYOfMpxqr&usp=drive_copy
+726,182,beginner62_trafficlights.webp,FALSE,https://drive.google.com/open?id=1Y3yBgsX0jAMb977GkDcBhPty8OcloF7m&usp=drive_copy
+727,182,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+728,182,beginner48_curveleft.webp,TRUE,https://drive.google.com/open?id=15sUZR-lTbTmP8eQH1Z-pwy-pbn4rJiSe&usp=drive_copy
+729,183,beginner71_pedestriancrossing.png,FALSE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+730,183,beginner72_beawareandstopforchildren.png,FALSE,https://drive.google.com/open?id=1PGqRmn_nOUt02qKbGlc8Vy7V6xuAE5SV&usp=drive_copy
+731,183,beginner49_reversecurveright.webp,TRUE,https://drive.google.com/open?id=1lfYgkzzjoGR76x2hHcB7I1Npf3vnZpCG&usp=drive_copy
+732,183,beginner79_signsofschool.png,FALSE,https://drive.google.com/open?id=1C284zaz9eKownjHBbXKwABt64aR-iZHD&usp=drive_copy
+733,184,beginner80_signsofplayground.png,FALSE,https://drive.google.com/open?id=1GLTx-uCklS78ZMjjthn6ZP5siSTG8x9I&usp=drive_copy
+734,184,beginner55_intersectionahead.png,TRUE,https://drive.google.com/open?id=1IDQ64-Z1Odb99tofKu_WdUaeR45wOuu2&usp=drive_copy
+735,184,beginner61_roundabout.webp,FALSE,https://drive.google.com/open?id=1mDdZ4w5loznt7uPyloxGyoeoYOfMpxqr&usp=drive_copy
+736,184,beginner62_trafficlights.webp,FALSE,https://drive.google.com/open?id=1Y3yBgsX0jAMb977GkDcBhPty8OcloF7m&usp=drive_copy
+737,185,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+738,185,beginner49_reversecurveright.webp,FALSE,https://drive.google.com/open?id=1lfYgkzzjoGR76x2hHcB7I1Npf3vnZpCG&usp=drive_copy
+739,185,beginner48_curveleft.webp,FALSE,https://drive.google.com/open?id=15sUZR-lTbTmP8eQH1Z-pwy-pbn4rJiSe&usp=drive_copy
+740,185,beginner59_skewedintersectionleft.webp,TRUE,https://drive.google.com/open?id=1Zui2FNRb3ym8URwWrm8SytD4I08fAEqr&usp=drive_copy
+741,186,beginner60_tjunction.webp,TRUE,https://drive.google.com/open?id=1EfySZm2xqJeSLOB9AV8nM-rHUEQMsjN8&usp=drive_copy
+742,186,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+743,186,beginner47_curveright.webp,FALSE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+744,186,beginner22_noleft.png,FALSE,https://drive.google.com/open?id=1xRwwNxusNlp-YWOVZJKnEcpE6-diSMdK&usp=drive_copy
+745,187,beginner23_nouturn.png,FALSE,https://drive.google.com/open?id=1YyLcEkAMEwgcV4FRsd6iFLGoywhVkjVK&usp=drive_copy
+746,187,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+747,187,beginner70_slowdownpedestrian.png,TRUE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+748,187,beginner47_curveright.webp,FALSE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+749,188,beginner71_pedestriancrossing.png,TRUE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+750,188,advanced38_diagrammaticdirectionsign.png,FALSE,https://drive.google.com/open?id=1ESa7svutNgz-ZgF2qJ0ffSQSpo6RCVq0&usp=drive_copy
+751,188,advanced39_diagrammaticdirectionsignforroundabout.svg,FALSE,https://drive.google.com/open?id=1Tby4RGHsSkAVnRhnEEAbYNRHUzrAvRL_&usp=drive_copy
+752,188,advanced40_servicesignwithnameofservice.png,FALSE,https://drive.google.com/open?id=1HHTmA3y9WQb8mpU1JM_YgsSyR4zXRz1-&usp=drive_copy
+753,189,expert3_DoNotBlockIntersection.png,FALSE,https://drive.google.com/open?id=1mqLbnOcOLatIzrwQS2h-bz8SAqgHLStE&usp=drive_copy
+754,189,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,FALSE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+755,189,expert16_ServiceSign(AdvanceSignwithNameofService).png,FALSE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+756,189,beginner72_beawareandstopforchildren.png,TRUE,https://drive.google.com/open?id=1PGqRmn_nOUt02qKbGlc8Vy7V6xuAE5SV&usp=drive_copy
+757,190,advanced16_halfyjunctionbehindright.webp,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+758,190,beginner74_advicetothepedestrian.png,TRUE,https://drive.google.com/open?id=18CDSyj_QoYAPGZg3phXz7jZ2Ig4C5uar&usp=drive_copy
+759,190,advanced25_roadnarrows.png,FALSE,https://drive.google.com/open?id=1yj7El-qow9jdyl4wbrYph4oN-0hj4XlF&usp=drive_copy
+760,190,advanced38_diagrammaticdirectionsign.png,FALSE,https://drive.google.com/open?id=1ESa7svutNgz-ZgF2qJ0ffSQSpo6RCVq0&usp=drive_copy
+761,191,advanced39_diagrammaticdirectionsignforroundabout.svg,FALSE,https://drive.google.com/open?id=1Tby4RGHsSkAVnRhnEEAbYNRHUzrAvRL_&usp=drive_copy
+762,191,beginner75_beawareandslowdownonbike.png,TRUE,https://drive.google.com/open?id=14ylxXd_7r_L4mij9Cj0Yv-04TtESWAlu&usp=drive_copy
+763,191,beginner30_noloading.png,FALSE,https://drive.google.com/open?id=1niWBI8uss9z0etaBIJNLq0j6FZm7TL68&usp=drive_copy
+764,191,beginner31_bawalmagsakay.png,FALSE,https://drive.google.com/open?id=1-ttZdhYgmsi2A9VLmWS3zTushXXJg2nl&usp=drive_copy
+765,192,beginner42_beawareofpersonswith.webp,TRUE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+766,192,beginner10_mergingtraffic.png,FALSE,https://drive.google.com/open?id=1ELbXw63GqJ9-puUhjMvbNPoXpOMrcqNw&usp=drive_copy
+767,192,beginner12_noentry.png,FALSE,https://drive.google.com/open?id=1ShfRmIVk-ATngSCmEdFeTCoE4cVf1HLL&usp=drive_copy
+768,192,beginner17_noentryfortricycles.png,FALSE,https://drive.google.com/open?id=1yeZCqEIf7EPYSM7ULYoa3kPtGytkA5Dc&usp=drive_copy
+769,193,beginner19_useoverpass.png,FALSE,https://drive.google.com/open?id=1hCLYGafNMwlSNkDPThU7S_oOj61onyB0&usp=drive_copy
+770,193,beginner22_noleft.png,FALSE,https://drive.google.com/open?id=1xRwwNxusNlp-YWOVZJKnEcpE6-diSMdK&usp=drive_copy
+771,193,beginner79_signsofschool.png,TRUE,https://drive.google.com/open?id=1C284zaz9eKownjHBbXKwABt64aR-iZHD&usp=drive_copy
+772,193,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+773,194,beginner80_signsofplayground.png,TRUE,https://drive.google.com/open?id=1GLTx-uCklS78ZMjjthn6ZP5siSTG8x9I&usp=drive_copy
+774,194,beginner71_pedestriancrossing.png,FALSE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+775,194,beginner42_beawareofpersonswith.webp,FALSE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+776,194,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+777,195,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+778,195,beginner40_beawareofschool.png,FALSE,https://drive.google.com/open?id=1w_9PA99BPo04jhyMdXllFf2FNIK1_C1w&usp=drive_copy
+779,195,beginner41_bikelaneahead.png,FALSE,https://drive.google.com/open?id=1djvZMAjj8uXfG6e4lb4FvTFdjc4fFRAr&usp=drive_copy
+780,195,beginner81_maximumheight.webp,TRUE,https://drive.google.com/open?id=19KC14spMf4C8Cnedexty7Mh8ep9hUOPJ&usp=drive_copy
+781,196,beginner82_slowdownaccident.png,TRUE,https://drive.google.com/open?id=1HaqVPeRrWfjV29tOIiWP97rpsBd8u13S&usp=drive_copy
+782,196,beginner62_trafficlights.webp,FALSE,https://drive.google.com/open?id=1Y3yBgsX0jAMb977GkDcBhPty8OcloF7m&usp=drive_copy
+783,196,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+784,196,beginner71_pedestriancrossing.png,FALSE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+785,197,beginner80_signsofplayground.png,FALSE,https://drive.google.com/open?id=1GLTx-uCklS78ZMjjthn6ZP5siSTG8x9I&usp=drive_copy
+786,197,beginner84_stackdirectionsignmultiple.png,TRUE,https://drive.google.com/open?id=1WiWBaoselJoI2nBLbbEJ-IcsjjnNA1wN&usp=drive_copy
+787,197,beginner42_beawareofpersonswith.webp,FALSE,https://drive.google.com/open?id=1TFxL2QOfP5NM5JD3c9-5z9kpUIQWHttt&usp=drive_copy
+788,197,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+789,198,beginner47_curveright.webp,FALSE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+790,198,beginner39_beawareofpedestrian.webp,FALSE,https://drive.google.com/open?id=1oqKZsnrJQc6yxOshQIYRX2Na-u5mHVLV&usp=drive_copy
+791,198,beginner85_stackdirectionsignsingle.png,TRUE,https://drive.google.com/open?id=1X28XPntvH4LqIKz932jjiQscoBRO5rrB&usp=drive_copy
+792,198,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+793,199,beginner71_pedestriancrossing.png,FALSE,https://drive.google.com/open?id=16FTsoltWApqOlDJ7cCalYGojRxofpV2Y&usp=drive_copy
+794,199,beginner87_intersectiondirectionsignright.png,TRUE,https://drive.google.com/open?id=1DGta7Wu7cOLyo_1G2rQ44-nDmTVIQFsN&usp=drive_copy
+795,199,advanced1_passeither.png,FALSE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+796,199,advanced3_rightlanemust.webp,FALSE,https://drive.google.com/open?id=1_83FKR4pqlxD6zUyuAbAEmtILNGnVZMn&usp=drive_copy
+797,200,beginner90_intersectiondirectionsignwithroutenumber.png,TRUE,https://drive.google.com/open?id=1XHMms3FufRfbxOsGEnaV66eXvMDN7lAc&usp=drive_copy
+798,200,advanced4_leftlanemust.png,FALSE,https://drive.google.com/open?id=1a0BTZvZUPa7yHlIEadJQ8VucowRbQwac&usp=drive_copy
+799,200,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+800,200,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+801,201,advanced39_diagrammaticdirectionsignforroundabout.svg,FALSE,https://drive.google.com/open?id=1Tby4RGHsSkAVnRhnEEAbYNRHUzrAvRL_&usp=drive_copy
+802,201,advanced40_servicesignwithnameofservice.png,FALSE,https://drive.google.com/open?id=1HHTmA3y9WQb8mpU1JM_YgsSyR4zXRz1-&usp=drive_copy
+803,201,expert3_DoNotBlockIntersection.png,FALSE,https://drive.google.com/open?id=1mqLbnOcOLatIzrwQS2h-bz8SAqgHLStE&usp=drive_copy
+804,201,beginner91_Reassurancedirectionsign.png,TRUE,https://drive.google.com/open?id=1aepyHSqAeUYF0IIGzJU6ng3JVjoGfY2b&usp=drive_copy
+805,202,beginner97_tollcharges.png,TRUE,https://drive.google.com/open?id=1MHRFUILAYcIfZWKKi-EWRJrJzBb2b-30&usp=drive_copy
+806,202,expert16_ServiceSign(AdvanceSignwithNameofService).png,FALSE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+807,202,expert17_ProhibitedonExpressway.png,FALSE,https://drive.google.com/open?id=1LNyyXq9jBJCO9qacEfed0KlYypCq997p&usp=drive_copy
+808,202,expert18_ExitAdvanceSign(With Distance).png,FALSE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+809,203,beginner98_lanedirectionsigns.png,TRUE,https://drive.google.com/open?id=17l08Dmq2H3wNQ3cZtrhn9j6yNUSWkYnt&usp=drive_copy
+810,203,advanced38_diagrammaticdirectionsign.png,FALSE,https://drive.google.com/open?id=1ESa7svutNgz-ZgF2qJ0ffSQSpo6RCVq0&usp=drive_copy
+811,203,advanced39_diagrammaticdirectionsignforroundabout.svg,FALSE,https://drive.google.com/open?id=1Tby4RGHsSkAVnRhnEEAbYNRHUzrAvRL_&usp=drive_copy
+812,203,advanced40_servicesignwithnameofservice.png,FALSE,https://drive.google.com/open?id=1HHTmA3y9WQb8mpU1JM_YgsSyR4zXRz1-&usp=drive_copy
+821,206,beginner103_checkbrakes.png,TRUE,https://drive.google.com/open?id=1rXVI-FGfvhC9MpNXkhzw0XGMYf1jn4Ik&usp=drive_copy
+822,206,expert17_ProhibitedonExpressway.png,FALSE,https://drive.google.com/open?id=1LNyyXq9jBJCO9qacEfed0KlYypCq997p&usp=drive_copy
+823,206,expert18_ExitAdvanceSign(With Distance).png,FALSE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+824,206,expert24_ExitDirectionSignForNumberedExits.webp,FALSE,https://drive.google.com/open?id=1mu1Vkka7Xf08EbZF_msupdk2I_oEpQsF&usp=drive_copy
+825,207,expert28_SlowVehiclesUseRightLane.png,FALSE,https://drive.google.com/open?id=1JSuUUW_yrnU6bvJu7YolQQVsE0lwVWeg&usp=drive_copy
+826,207,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+827,207,advanced16_halfyjunctionbehindright.webp,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+828,207,beginner104_reducespeed.png,TRUE,https://drive.google.com/open?id=1DdVwV6dnUkDewhef24Jjc3dCpnmvckL6&usp=drive_copy
+829,208,advanced3_rightlanemust.webp,FALSE,https://drive.google.com/open?id=1_83FKR4pqlxD6zUyuAbAEmtILNGnVZMn&usp=drive_copy
+830,208,beginner107_roadclosed.png,TRUE,https://drive.google.com/open?id=1HaG2JW1lBz1jwBTmmRZ4JYe_vEXOGh4r&usp=drive_copy
+831,208,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+832,208,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+833,209,advanced16_halfyjunctionbehindright.webp,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+834,209,beginner109_roadnarrowsahead.png,TRUE,https://drive.google.com/open?id=1wfaRSr0JolMa55uz2Oh87HIie6O_q0Ua&usp=drive_copy
+835,209,beginner74_advicetothepedestrian.png,FALSE,https://drive.google.com/open?id=18CDSyj_QoYAPGZg3phXz7jZ2Ig4C5uar&usp=drive_copy
+836,209,beginner79_signsofschool.png,FALSE,https://drive.google.com/open?id=1C284zaz9eKownjHBbXKwABt64aR-iZHD&usp=drive_copy
+837,210,beginner110_narrowbridgeahead.png,TRUE,https://drive.google.com/open?id=1B3TrF6jziMtds-zbfOf4mfIKoMw_TlxR&usp=drive_copy
+838,210,expert28_SlowVehiclesUseRightLane.png,FALSE,https://drive.google.com/open?id=1JSuUUW_yrnU6bvJu7YolQQVsE0lwVWeg&usp=drive_copy
+839,210,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+840,210,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,FALSE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+841,211,beginner14_noentryforjeepneys.png,FALSE,https://drive.google.com/open?id=1ooq0oUkg7O-wYHDqxSQtTsY2q6aOHRPz&usp=drive_copy
+842,211,beginner18_nopedestrian.webp,TRUE,https://drive.google.com/open?id=1sntxXHDpP-G_4LuiRkdN0xf9CI1Sw7TO&usp=drive_copy
+843,211,beginner26_minimumspeed.webp,FALSE,https://drive.google.com/open?id=1xfsCK0kPuZ1rJ1yNZDR432IaTxJJDWEX&usp=drive_copy
+844,211,beginner38_noblowing.png,FALSE,https://drive.google.com/open?id=1dFTBUY0w1Bpb4ROBlDpaiI9W_DbkoCZb&usp=drive_copy
+845,212,expert16_ServiceSign(AdvanceSignwithNameofService).png,FALSE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+846,212,beginner107_roadclosed.png,FALSE,https://drive.google.com/open?id=1HaG2JW1lBz1jwBTmmRZ4JYe_vEXOGh4r&usp=drive_copy
+847,212,beginner103_checkbrakes.png,FALSE,https://drive.google.com/open?id=1rXVI-FGfvhC9MpNXkhzw0XGMYf1jn4Ik&usp=drive_copy
+848,212,advanced1_passeither.png,TRUE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+849,213,expert28_SlowVehiclesUseRightLane.png,FALSE,https://drive.google.com/open?id=1JSuUUW_yrnU6bvJu7YolQQVsE0lwVWeg&usp=drive_copy
+850,213,advanced3_rightlanemust.webp,TRUE,https://drive.google.com/open?id=1_83FKR4pqlxD6zUyuAbAEmtILNGnVZMn&usp=drive_copy
+851,213,beginner2_giveway.png,FALSE,https://drive.google.com/open?id=1g8yyKdgDsZL5Eq0BVQW0_afeSzGHwA6O&usp=drive_copy
+852,213,beginner3_leftturner.png,FALSE,https://drive.google.com/open?id=10AjA3yKqheSlSfEGGPBsR9SWPIMYl5dU&usp=drive_copy
+853,214,beginner4_noturns.png,FALSE,https://drive.google.com/open?id=1fzjCkwe9LY8ZGITT8hFLBjyzQi4Zbmbj&usp=drive_copy
+854,214,beginner70_slowdownpedestrian.png,FALSE,https://drive.google.com/open?id=1LnzW6U-lxhkcz1bw2nzQYasLvsDSsM39&usp=drive_copy
+855,214,advanced4_leftlanemust.png,TRUE,https://drive.google.com/open?id=1a0BTZvZUPa7yHlIEadJQ8VucowRbQwac&usp=drive_copy
+856,214,beginner32_noparking.png,FALSE,https://drive.google.com/open?id=1lZEoE2DI1Wasj51dF6N-q7OuWCP621HR&usp=drive_copy
+857,215,beginner34_noparkingtowawayzone.webp,FALSE,https://drive.google.com/open?id=1MmVAE7O27hGqyCWZiqXh7vtGbw9Y65-L&usp=drive_copy
+858,215,advanced6_noentryfortrucks.png,TRUE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+859,215,beginner110_narrowbridgeahead.png,FALSE,https://drive.google.com/open?id=1B3TrF6jziMtds-zbfOf4mfIKoMw_TlxR&usp=drive_copy
+860,215,advanced1_passeither.png,FALSE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+861,216,advanced13_yjunction.webp,TRUE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+862,216,beginner3_leftturner.png,FALSE,https://drive.google.com/open?id=10AjA3yKqheSlSfEGGPBsR9SWPIMYl5dU&usp=drive_copy
+863,216,beginner4_noturns.png,FALSE,https://drive.google.com/open?id=1fzjCkwe9LY8ZGITT8hFLBjyzQi4Zbmbj&usp=drive_copy
+864,216,beginner5_oneway.png,FALSE,https://drive.google.com/open?id=14FnQJQ5AdI_EW3E1kKACBSomaATZSoOJ&usp=drive_copy
+865,217,beginner6_keepright.png,FALSE,https://drive.google.com/open?id=1dBlPOusLwpIAP3YeFkSbtwV89xm3xSad&usp=drive_copy
+866,217,advanced16_halfyjunctionbehindright.webp,TRUE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+867,217,beginner47_curveright.webp,FALSE,https://drive.google.com/open?id=1oi29Q9w1LZxK73HJzZsilxeMZqd75ogY&usp=drive_copy
+868,217,beginner48_curveleft.webp,FALSE,https://drive.google.com/open?id=15sUZR-lTbTmP8eQH1Z-pwy-pbn4rJiSe&usp=drive_copy
+869,218,beginner49_reversecurveright.webp,FALSE,https://drive.google.com/open?id=1lfYgkzzjoGR76x2hHcB7I1Npf3vnZpCG&usp=drive_copy
+870,218,advanced22_apporachtointersectionmergingtrafficright.webp,TRUE,https://drive.google.com/open?id=10THrBhpFo9NUoHnmNl9pV9Bvb4rQBS8y&usp=drive_copy
+871,218,beginner43_sharpturnright.webp,FALSE,https://drive.google.com/open?id=12NrziNbEAUQOhgB-DyNog42tmFevyxZQ&usp=drive_copy
+872,218,advanced4_leftlanemust.png,FALSE,https://drive.google.com/open?id=1a0BTZvZUPa7yHlIEadJQ8VucowRbQwac&usp=drive_copy
+873,219,beginner6_keepright.png,FALSE,https://drive.google.com/open?id=1dBlPOusLwpIAP3YeFkSbtwV89xm3xSad&usp=drive_copy
+874,219,beginner7_keepleft.webp,FALSE,https://drive.google.com/open?id=14c3tYCXQy85c98hOLzCm65h8ALTmf5bL&usp=drive_copy
+875,219,beginner10_mergingtraffic.png,FALSE,https://drive.google.com/open?id=1ELbXw63GqJ9-puUhjMvbNPoXpOMrcqNw&usp=drive_copy
+876,219,advanced25_roadnarrows.png,TRUE,https://drive.google.com/open?id=1yj7El-qow9jdyl4wbrYph4oN-0hj4XlF&usp=drive_copy
+877,220,advanced38_diagrammaticdirectionsign.png,TRUE,https://drive.google.com/open?id=1ESa7svutNgz-ZgF2qJ0ffSQSpo6RCVq0&usp=drive_copy
+878,220,beginner21_noright.png,FALSE,https://drive.google.com/open?id=16Vilc3gAAIRmW9d0ERfnhj0PDHbWLbXt&usp=drive_copy
+879,220,beginner22_noleft.png,FALSE,https://drive.google.com/open?id=1xRwwNxusNlp-YWOVZJKnEcpE6-diSMdK&usp=drive_copy
+880,220,beginner23_nouturn.png,FALSE,https://drive.google.com/open?id=1YyLcEkAMEwgcV4FRsd6iFLGoywhVkjVK&usp=drive_copy
+881,221,beginner24_noovertaking.webp,FALSE,https://drive.google.com/open?id=1W7jPpbgbMoTiHcVhuI5b0U0HmSvyT0mo&usp=drive_copy
+882,221,advanced39_diagrammaticdirectionsignforroundabout.svg,TRUE,https://drive.google.com/open?id=1Tby4RGHsSkAVnRhnEEAbYNRHUzrAvRL_&usp=drive_copy
+883,221,beginner49_reversecurveright.webp,FALSE,https://drive.google.com/open?id=1lfYgkzzjoGR76x2hHcB7I1Npf3vnZpCG&usp=drive_copy
+884,221,beginner55_intersectionahead.png,FALSE,https://drive.google.com/open?id=1IDQ64-Z1Odb99tofKu_WdUaeR45wOuu2&usp=drive_copy
+885,222,advanced40_servicesignwithnameofservice.png,TRUE,https://drive.google.com/open?id=1HHTmA3y9WQb8mpU1JM_YgsSyR4zXRz1-&usp=drive_copy
+886,222,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+887,222,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+888,222,beginner6_keepright.png,FALSE,https://drive.google.com/open?id=1MwlfOHROE1gK1hFPlIk-wVkO4sQky0Ot&usp=drive_copy
+889,223,advanced22_apporachtointersectionmergingtrafficright.webp,FALSE,https://drive.google.com/open?id=10THrBhpFo9NUoHnmNl9pV9Bvb4rQBS8y&usp=drive_copy
+890,223,advanced25_roadnarrows.png,FALSE,https://drive.google.com/open?id=1yj7El-qow9jdyl4wbrYph4oN-0hj4XlF&usp=drive_copy
+891,223,expert3_DoNotBlockIntersection.png,TRUE,https://drive.google.com/open?id=1mqLbnOcOLatIzrwQS2h-bz8SAqgHLStE&usp=drive_copy
+892,223,advanced25_roadnarrows.png,FALSE,https://drive.google.com/open?id=1yj7El-qow9jdyl4wbrYph4oN-0hj4XlF&usp=drive_copy
+893,224,beginner110_narrowbridgeahead.png,FALSE,https://drive.google.com/open?id=1B3TrF6jziMtds-zbfOf4mfIKoMw_TlxR&usp=drive_copy
+894,224,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,TRUE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+895,224,advanced13_yjunction.webp,FALSE,https://drive.google.com/open?id=1ks_YDNI0l6RVaYWErNKOX0GTosTRGIYA&usp=drive_copy
+896,224,beginner48_curveleft.webp,FALSE,https://drive.google.com/open?id=15sUZR-lTbTmP8eQH1Z-pwy-pbn4rJiSe&usp=drive_copy
+897,225,expert8_NoEntryforVehicleswithGrossVehicleMassofMoreThan5Tons.webp,FALSE,https://drive.google.com/open?id=13YHuzAt45u45KEAoeLNWQX66Hraiv65y&usp=drive_copy
+898,225,expert16_ServiceSign(AdvanceSignwithNameofService).png,TRUE,https://drive.google.com/open?id=103w5LgcoTOHj9YZbQmo-Zy8us3A038TZ&usp=drive_copy
+899,225,expert17_ProhibitedonExpressway.png,FALSE,https://drive.google.com/open?id=1LNyyXq9jBJCO9qacEfed0KlYypCq997p&usp=drive_copy
+900,225,expert18_ExitAdvanceSign(With Distance).png,FALSE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+901,226,expert24_ExitDirectionSignForNumberedExits.webp,FALSE,https://drive.google.com/open?id=1mu1Vkka7Xf08EbZF_msupdk2I_oEpQsF&usp=drive_copy
+902,226,expert18_ExitAdvanceSign(With Distance).png,TRUE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+903,226,beginner110_narrowbridgeahead.png,FALSE,https://drive.google.com/open?id=1B3TrF6jziMtds-zbfOf4mfIKoMw_TlxR&usp=drive_copy
+904,226,advanced1_passeither.png,FALSE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+905,227,advanced3_rightlanemust.webp,FALSE,https://drive.google.com/open?id=1_83FKR4pqlxD6zUyuAbAEmtILNGnVZMn&usp=drive_copy
+906,227,advanced4_leftlanemust.png,FALSE,https://drive.google.com/open?id=1a0BTZvZUPa7yHlIEadJQ8VucowRbQwac&usp=drive_copy
+907,227,advanced6_noentryfortrucks.png,FALSE,https://drive.google.com/open?id=1u3sCGZ8uSIPSGnp7mcKrwrGwNuzwlQta&usp=drive_copy
+908,227,expert19_ExitAdvanceSignWithDistanceandRightLane.png,TRUE,https://drive.google.com/open?id=1Odz8JQEln0MTfyLceeFEavqx6Ycucflu&usp=drive_copy
+913,228,expert18_ExitAdvanceSign(With Distance).png,FALSE,https://drive.google.com/open?id=1pfNAHSpWu4aN_TVbdnOu-8lsLpGEqVdB&usp=drive_copy
+914,228,expert24_ExitDirectionSignForNumberedExits.webp,TRUE,https://drive.google.com/open?id=1mu1Vkka7Xf08EbZF_msupdk2I_oEpQsF&usp=drive_copy
+915,228,expert19_ExitAdvanceSignWithDistanceandRightLane.png,FALSE,https://drive.google.com/open?id=1Odz8JQEln0MTfyLceeFEavqx6Ycucflu&usp=drive_copy
+916,228,advanced1_passeither.png,FALSE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+917,229,expert28_SlowVehiclesUseRightLane.png,TRUE,https://drive.google.com/open?id=1JSuUUW_yrnU6bvJu7YolQQVsE0lwVWeg&usp=drive_copy
+918,229,beginner110_narrowbridgeahead.png,FALSE,https://drive.google.com/open?id=1B3TrF6jziMtds-zbfOf4mfIKoMw_TlxR&usp=drive_copy
+919,229,advanced1_passeither.png,FALSE,https://drive.google.com/open?id=1M1H0gPBWGvSwsPLcMlZ3aqM7ygIm1Oxl&usp=drive_copy
+920,229,advanced3_rightlanemust.webp,FALSE,https://drive.google.com/open?id=1_83FKR4pqlxD6zUyuAbAEmtILNGnVZMn&usp=drive_copy

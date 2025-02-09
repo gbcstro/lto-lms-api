@@ -4,16 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Models\BookmarkModule;
 use App\Models\Module;
+use App\Models\User;
 use Auth;
 use Illuminate\Http\Request;
 use Throwable;
 
 class BookmarkModuleController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         try {
-            $user = Auth::user();
+            $user = isset($request->id) ? User::find($request->id) : Auth::user();
+
             $bookmarks = BookmarkModule::with(['module.lessons'])
                 ->where('user_id', $user->id)
                 ->get()

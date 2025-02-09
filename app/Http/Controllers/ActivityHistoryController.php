@@ -18,9 +18,10 @@ class ActivityHistoryController extends Controller
     public function index(Request $request)
     {
         try {
+            $id = $request->id ?? null;
             // Retrieve the activity history for the given user ID
             $activityHistory = ActivityHistory::with('activity') // Eager load related activities
-                ->where('user_id', Auth::user()->id)  // Filter by user ID
+                ->where('user_id', $id ?? Auth::user()->id)  // Filter by user ID
                 ->get();  // Get the results
 
             // Check if activity history exists for the user

@@ -22,7 +22,6 @@ class ActivityController extends Controller
         try {
             // Fetch all activities and process each one
             $activities = Activity::with('questions.choices')->get()->map(function ($activity) {
-
                 return $this->attachQuestions($activity);
             });
 
